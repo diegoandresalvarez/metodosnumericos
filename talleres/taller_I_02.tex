@@ -1,0 +1,167 @@
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage[english,spanish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{fourier}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,bm}
+\usepackage{mathtools}  
+\mathtoolsset{showonlyrefs} 
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[letterpaper,margin=2cm]{geometry}
+\definecolor{OliveGreen}{rgb}{0.14,0.7,0.14} % 34-139-34
+\definecolor{light-gray}{gray}{0.99}
+\usepackage{listings}       % write source code in LaTeX
+\lstdefinelanguage{Matlab}%
+{keywords={gt,lt,gt,lt,amp,abs,acos,acosh,acot,acoth,acsc,acsch,%
+      all,angle,ans,any,asec,asech,asin,asinh,atan,atan2,atanh,auread,%
+      auwrite,axes,axis,balance,bar,bessel,besselk,bessely,beta,%
+      betainc,betaln,blanks,bone,break,brighten,capture,cart2pol,%
+      cart2sph,caxis,cd,cdf2rdf,cedit,ceil,cell,cell2mat,chol,cla,clabel,clc,clear,clf,clock,close,colmmd,Colon,colorbar,colormap,ColorSpec,colperm,%
+      comet,comet3,compan,compass,computer,cond,condest,conj,contour,%
+      contour3,contourc,contrast,conv,conv2,cool,copper,corrcoef,cos,%
+      cosh,cot,coth,cov,cplxpair,cputime,cross,csc,csch,csvread,%
+      csvwrite,cumprod,cumsum,cylinder,date,dbclear,dbcont,dbdown,%
+      dbquit,dbstack,dbstatus,dbstep,dbstop,dbtype,dbup,ddeadv,ddeexec,%
+      ddeinit,ddepoke,ddereq,ddeterm,ddeunadv,deblank,dec2hex,deconv,%
+      del2,delete,double,demo,det,diag,diary,diff,diffuse,dir,disp,dlmread,%
+      dlmwrite,dmperm,dot,drawnow,echo,eig,ellipj,ellipke,else,elseif,%
+      end,engClose,engEvalString,engGetFull,engGetMatrix,engOpen,%
+      engOutputBuffer,engPutFull,engPutMatrix,engSetEvalCallback,%
+      engSetEvalTimeout,engWinInit,eps,erf,erfc,erfcx,erfinv,error,%
+      errorbar,etime,etree,eval,exist,exp,expint,expm,expo,eye,fclose,%
+      feather,feof,ferror,feval,fft,fft2,fftshift,fgetl,fgets,figure,%
+      fill,fill3,filter,filter2,find,findstr,fix,flag,fliplr,%
+      flipud,floor,flops,fmin,fmins,fopen,for,format,fplot,fprintf,%
+      fread,frewind,fscanf,fseek,ftell,full,function,funm,fwrite,fzero,%
+      gallery,gamma,gammainc,gammaln,gca,gcd,gcf,gco,get,getenv,%
+      getframe,ginput,gplot,gradient,gray,graymon,grid,griddata,%
+      gtext,hadamard,hankel,help,hess,hex2dec,hex2num,hidden,hilb,hist,%
+      hold,home,hostid,hot,hsv,hsv2rgb,if,ifft,ifft2,imag,image,%
+      imagesc,Inf,info,int2str,interp1,interp2,interpft,inv,%
+      invhilb,isempty,isglobal,ishold,isieee,isinf,isletter,isnan,%
+      isreal,isspace,issparse,isstr,inf,int,isequal,jet,keyboard,kron,lasterr,lcm,legend,legendre,length,lin2mu,line,linspace,load,log,log10,log2,%
+      loglog,logm,logspace,lookfor,lower,ls,lscov,lsim,lu,magic,matClose,%
+      matDeleteMatrix,matGetDir,matGetFp,matGetFull,matGetMatrix,%
+      matGetNextMatrix,matGetString,matlabrc,matlabroot,matOpen,%
+      matPutFull,matPutMatrix,matPutString,max,mean,median,menu,mesh,%
+      meshc,meshgrid,meshz,mexAtExit,mexCallMATLAB,mexdebug,%
+      mexErrMsgTxt,mexEvalString,mexFunction,mexGetFull,mexGetMatrix,%
+      mexGetMatrixPtr,mexPrintf,mexPutFull,mexPutMatrix,mexSetTrapFlag,%
+      min,more,movie,moviein,mu2lin,mxCalloc,mxCopyCharacterToPtr,%
+      mxCopyComplex16ToPtr,mxCopyInteger4ToPtr,mxCopyPtrToCharacter,%
+      mxCopyPtrToComplex16,mxCopyPtrToInteger4,mxCopyPtrToReal8,%
+      mxCopyReal8ToPtr,mxCreateFull,mxCreateSparse,mxCreateString,%
+      mxFree,mxFreeMatrix,mxGetIr,mxGetJc,mxGetM,mxGetN,mxGetName,%
+      mxGetNzmax,mxGetPi,mxGetPr,mxGetScalar,mxGetString,mxIsComplex,%
+      mxIsFull,mxIsNumeric,mxIsSparse,mxIsString,mxIsTypeDouble,%
+      mxSetIr,mxSetJc,mxSetM,mxSetN,mxSetName,mxSetNzmax,mxSetPi,%
+      mxSetPr,NaN,nargchk,nargin,nargout,nchoosek,newplot,nextpow2,nnls,nnz,%
+      nonzeros,norm,normest,null,num2str,nzmax,ode23,ode45,orient,orth,%
+      pack,pascal,patch,path,pause,pcolor,pi,pink,pinv,plot,plot3,%
+      pol2cart,polar,poly,polyder,polyeig,polyfit,polyval,polyvalm,%
+      pow2,print,printopt,prism,prod,pwd,qr,qrdelete,qrinsert,quad,%
+      quad8,quit,quiver,qz,rand,randn,randperm,rank,rat,rats,rbbox,%
+      rcond,real,realmax,realmin,refresh,rem,reset,reshape,residue,%
+      return,rgb2hsv,rgbplot,rootobject,roots,rose,rosser,rot90,rotate,%
+      round,rref,rrefmovie,rsf2csf,save,saxis,schur,sec,sech,semilogx,%
+      semilogy,set,setstr,shading,sign,sin,sinh,size,slice,sort,sound,%
+      spalloc,sparse,spaugment,spconvert,spdiags,specular,speye,spfun,%
+      sph2cart,sphere,spinmap,spline,spones,spparms,sprandn,sprandsym,%
+      sprank,sprintf,spy,sqrt,sqrtm,ss,sscanf,stairs,startup,std,stem,%
+      str2mat,str2num,strcmp,strings,strrep,strtok,subplot,subscribe,%
+      subspace,surf,surface,surfc,surfl,surfnorm,svd,symbfact,%
+      symmmd,symrcm,sym2poly,tan,tanh,tempdir,tempname,terminal,text,tic,title,%
+      toc,toeplitz,trace,trapz,tril,triplequad,triu,type,uicontrol,uigetfile,%
+      uimenu,uiputfile,unix,unwrap,upper,vander,ver,version,view,%
+      viewmtx,waitforbuttonpress,waterfall,wavread,wavwrite,what,%
+      whatsnew,which,while,whitebg,who,whos,wilkinson,wk1read,%
+      wk1write,xlabel,xor,ylabel,zeros,zlabel,zoom,%
+      bvpinit,bvp4c,daspect,delaunay,deval,initmesh,false,%
+    minor,ones,pdetool,repmat,switch,tight,trimesh,true,triplot,xlsread,factorial, expand,sym,subs},
+   sensitive=true,
+%   keywordstyle=\color{OliveGreen}\emph,  % palabras reservadas en letra verde y negrilla
+   commentstyle =\color{OliveGreen},
+   morecomment  =[l][commentstyle]{\%\%}{},
+   morestring   =[b][\ttfamily\emph]",
+   showspaces   =false,          % show spaces adding particular underscores
+   showstringspaces=false,    % underline spaces within strings
+   basicstyle      =\ttfamily\footnotesize,
+   backgroundcolor =\color{light-gray},
+   framexleftmargin=0cm,
+   frame=shadowbox,
+   fontadjust=true,
+   rulesepcolor=\color{OliveGreen},
+   emph={for,if,end,while,function,switch,otherwise,case,return},
+   emphstyle=\color{blue},
+}
+\decimalpoint
+\newcommand{\matlab}{$\text{MATLAB}^{\text{\textregistered}}$~}
+
+\begin{document}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+\textbf{Métodos Numéricos Aplicados a la Ingeniería Civil}.\\
+Profesor: Felipe Uribe Castillo.\\
+Taller I: Solución de sistemas de ecuaciones lineales e Interpolación.\\
+Versión No. 2}}}
+\end{center}
+
+\vspace{1cm}
+\noindent El plazo para la entrega del taller es hasta el \emph{Miércoles 9 de Marzo (6:00pm)}. Por cada día de retraso en la entrega del trabajo se les descontará 0.3 unidades de la nota final.
+
+Enviar a mi correo, un comprimido que incluya el archivo en word (convertido a pdf) o \LaTeX~ con la solución de los puntos y los programas desarrollados. Los programas deberán estar bien comentados, bien identados y demás recomendaciones vistas en clase (se rebajará si el código no cumple con esto). Habrán bonificaciones si ustedes hacen su propia versión de los programas vistos en clase. 
+
+\begin{enumerate}
+ \item La fórmula cuadrática clásica dice que las dos raices de la ecuación cuadratica:
+  \begin{equation}
+   ax^2 + bx + c = 0
+  \end{equation}
+ son: 
+  \begin{equation}
+   x_1, x_2 = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+  \end{equation}
+ \emph{i).} Use esta fórmula en \matlab para calcular las raices con $a=1,b=-1,c=1$. \emph{ii).} Compare sus resultados con el comando \texttt{roots}. \emph{iii).} Graficar el polinomio para verificar la solución.
+
+ \item  Resuelva los siguientes sistemas de ecuaciones:
+  \begin{equation}
+   \begin{matrix}
+    2x_1 &− 6x_2 &− x_3  &= −38 \\
+   −3x_1 &− x_2  &+ 6x_3 &= −34 \\
+   −8x_1 &+ x_2  &− 2x_3 &= −40
+   \end{matrix}
+  \end{equation}
+  \begin{equation}
+   \begin{matrix}
+    2x_1 &+ x_2 &= 8 \\
+    5x_1 &+ 7x_2 &=10
+   \end{matrix}
+  \end{equation}
+ utilizando los métodos de Gauss, Gauss-Jordan, LU e iteración de Jacobi (solo 4 iteraciones). Favor resolver el primer sistema a mano (el segundo puede hacerse usando solo \matlab). Compare sus respuestas utilizando comandos de \matlab ó los programas vistos en clase.
+
+ 
+ \item El programa de iteración de Jacobi (\texttt{jacobi\_iter.m}), tiene unas lineas que evaluan el número de condición de la matriz $\mathbf{A}$ para verificar que al sistema puede aplicársele la iteración de Jacobi. Agregué un criterio adicional que evalúe si la $\mathbf{A}$ es diagonal dominante.
+
+ \item El esfuerzo cortante ($\tau$) de nueve especímenes de suelo que fueron tomados a varias profundidades ($z$) en un estrato de arcilla son:
+ \begin{table}[h!]
+  \centering
+  \begin{tabular}{c|ccccccccc}
+   $z$ [m]      & 1.9  & 3.1  & 4.2  & 5.1  & 5.8  & 6.9  & 8.1  & 9.3  & 10.0 \\
+   \hline
+   $\tau$ [kPa] & 14.4 & 28.7 & 19.2 & 43.1 & 33.5 & 52.7 & 71.8 & 62.2 & 76.6
+  \end{tabular}
+ \end{table}
+
+ \emph{i).} Utilice su criterio para encontrar el mejor método de interpolación (polinomial, Lagrange, Newton, Chebyshev, lineal, splines), diga las razones por las cuales lo escogió (usar comandos y graficar en MATLAB para facilitar la elección). \emph{ii).} Muestre los resultados en un gráfico. \emph{iii).} Estime el esfuerzo cortante a una profundidad de 4.0 y 8.0 metros por cada uno de los métodos mencionados (haga una tabla para mostrar los resultados).
+ 
+ \item Verifique el fenómeno de Runge sobre la función:
+  \begin{equation}
+   f(x)=\frac{1}{1+25x^2} 
+  \end{equation}
+ Para tal fin, estime los primeros 10 polinomios de Lagrange, utilizando como puntos para la interpolación: \emph{i).} Puntos equidistantes en el intervalo [-1, 1], \emph{ii).} Nodos de Chebyshev en el intervalo [-1, 1].  
+
+\end{enumerate}
+
+\end{document}

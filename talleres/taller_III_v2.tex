@@ -1,0 +1,64 @@
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage[english,spanish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{fourier}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,bm}
+\usepackage{mathtools}  
+\mathtoolsset{showonlyrefs} 
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[letterpaper,margin=2cm]{geometry}
+\definecolor{OliveGreen}{rgb}{0.14,0.7,0.14} % 34-139-34
+\definecolor{light-gray}{gray}{0.99}
+\usepackage{listings}       % write source code in LaTeX
+\usepackage{url}
+\decimalpoint
+\newcommand{\matlab}{$\text{MATLAB}^{\text{\textregistered}}$~}
+
+\begin{document}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+\textbf{Métodos Numéricos Aplicados a la Ingeniería Civil}.\\
+Profesor: Felipe Uribe Castillo.\\
+Taller III: Integración y Solución de ODEs.\\
+Versión No. 2}}}
+\end{center}
+
+\vspace{1cm}
+\noindent El plazo para la entrega del taller es hasta el \emph{Miércoles 4 de Mayo (6:00pm)}. Por cada hora de retraso en la entrega del trabajo se les descontará 0.1 unidades en la nota final. 
+
+\begin{enumerate}
+
+ \item La función de densidad de probabilidades de una variable aleatoria Gaussiana se define como,
+ \begin{equation}
+  f_{X}(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+ \end{equation}
+ 
+ Calcule la probabilidad de que la variable aleatoria $X$ con media 5 y desviación estandar 8 se encuentre entre 4 y 15. Para ello, use $N = 3$ puntos de la cuadratura de Gauss-Legendre ($\boldsymbol{\xi} = [-\sqrt{3/5},~0,~\sqrt{3/5}]$). Use la ecuación vista en clase para calcular a mano los pesos de la cuadratura, deberá hallar los polinomios de Legendre usando la fórmula Rodrigues. Use comandos de integración de \matlab para validar el resultado (\texttt{integral} ó \texttt{quad}).
+
+ \item Sobre un rascacielos el viento ejerce una fuerza distribuida, la cual se ha medido en diferentes alturas:
+ \begin{table}[!hb]
+  \centering
+  \begin{tabular}{c|ccccccccc}
+   $h$ [m]   & 0 & 30  & 60   & 90   & 120  & 150  & 180  & 210  & 240 \\
+   \hline
+   $w$ [N/m] & 0 & 340 & 1200 & 1600 & 2700 & 3100 & 3200 & 3500 & 3800
+  \end{tabular}
+ \end{table}
+ 
+ Calcule la fuerza resultante de dicha carga distribuida ($F = \int_{a}^{b} w(x)\mathrm{d}x$) y su punto de acción (centroide del área bajo la curva: $\bar{x}=\int_{a}^{b} x w(x)\mathrm{d}x/\int_{a}^{b} w(x)\mathrm{d}x$). Utilice el método de Romberg con $k=3$ y $n=4$ a mano. Compare sus resultados con el programa visto en clase (para generar la ``function handle'' de estos puntos use el comando de \matlab \texttt{interp1}, ó bien modifique el programa para que acepte los puntos evaluados de la función, en lugar de la función).
+
+
+\item La ODE que describe un oscilador no lineal de van der Pol está dada por:
+ \begin{equation}
+  x''(t) + \mu (x^2(t) - 1) x'(t) + x(t) = 0 \quad \text{con } x(t_0) = x'(t_0) = 0 \quad \text{y } \mu=1
+ \end{equation}
+
+ Programe el método de RK $3/8$ (use como base los programas hechos en clase), para resolver esta ecuación diferencial de segundo orden en el intervalo $0\leq t \leq 10$ usando un $h=0.25$ y $h=0.125$. Para ello habrá que plantear el espacio de estados. Compare sus resultados con la función de \matlab \texttt{ode45}. Mostrar los resultados en una sola gráfica para cada $h$. 
+ 
+\end{enumerate}
+
+\end{document}

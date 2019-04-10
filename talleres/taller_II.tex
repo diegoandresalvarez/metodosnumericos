@@ -1,0 +1,60 @@
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage[english,spanish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{fourier}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,bm}
+\usepackage{mathtools}  
+\mathtoolsset{showonlyrefs} 
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[letterpaper,margin=2cm]{geometry}
+\definecolor{OliveGreen}{rgb}{0.14,0.7,0.14} % 34-139-34
+\definecolor{light-gray}{gray}{0.99}
+\usepackage{listings}       % write source code in LaTeX
+\usepackage{url}
+\decimalpoint
+\newcommand{\matlab}{$\text{MATLAB}^{\text{\textregistered}}$~}
+
+\begin{document}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+\textbf{Métodos Numéricos Aplicados a la Ingeniería Civil}.\\
+Profesor: Felipe Uribe Castillo.\\
+Taller II: Raices de ecuaciones y Optimización.}}}
+\end{center}
+
+\vspace{1cm}
+\noindent El plazo para la entrega del taller es hasta el \emph{Martes 19 de Abril (9:00am)}. Por cada hora de retraso en la entrega del trabajo se les descontará 0.1 unidades en la nota final. 
+
+\begin{enumerate}
+ \item Realice 3 iteraciones del método de iteración hacia el punto fijo y del de posición falsa para hallar la raiz de la función $f(x)= \sin(\sqrt{x})-x$. Use como intervalo de búsqueda $[a,b]=[0.3,1]$ (\emph{a mano}).
+
+ \item Se toman mediciones de presión $p$ en ciertos puntos detrás del ala de un avión para cierto intervalo de tiempo $t$. Los datos obtenidos se aproximan de mejor forma con la siguiente ecuación:
+ \begin{equation}
+  p(t) = 6 \cos(t) − 1.5 \sin(t)
+ \end{equation}
+ con $t = 0$ a $6$ s. Realice 4 iteraciones del método de búsqueda áurea para encontrar la presión mínima (\emph{a mano}). Use como intervalo de búsqueda $[a,b]=[2,4]$. Grafique la función y el mínimo en la 4 iteración (\emph{a mano}).
+
+ \item Utilice el método de multiplicadores de Lagrange para optimizar la función objetivo (\emph{a mano}):
+ \begin{equation}
+  f(x_1,x_2) = x_1^2 + 0.5x_1 + 3x_1x_2 + 5x_2^2
+ \end{equation}
+ sujeta a las restricciones:
+ \begin{align}
+  3x_1 + 2x_2 + 2  = 0 \\
+  15x_1 − 3x_2 − 1 = 0
+ \end{align}
+ Luego de hallar la solución grafique en \matlab la función objetivo (usar \texttt{pcolor} y \texttt{contour}), las restricciones (esto se hace con la curva de nivel igual a [0 0], para ello usar \texttt{contour}) y el óptimo (especificar si es mínimo o máximo usando el criterio de su elección). Debe dar algo como esto:
+ \begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.2]{lagrange}
+ \end{figure} 
+ 
+ \item Programe en \matlab el método de Newton para hallar mínimos de funciones. Verifique la respuesta de su programa con el comando \texttt{fminunc}. Utilice como ejemplos la función de Booth y la de Matyas ver \url{https://en.wikipedia.org/wiki/Test_functions_for_optimization} para saber las ecuaciones. Realizar los gráficos respectivos (función y mínimo). \emph{Sugerencia: básicamente se deberá modificar el código de descenso más empinado, hay que agregar el cálculo de la matriz Hessiana, la cual se halla con aproximaxiones de diferencias finitas}.
+
+ \end{enumerate}
+ 
+\end{document}

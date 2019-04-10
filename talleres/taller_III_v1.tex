@@ -1,0 +1,83 @@
+
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage[english,spanish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{fourier}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,bm}
+\usepackage{mathtools}  
+\mathtoolsset{showonlyrefs} 
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[letterpaper,margin=2cm]{geometry}
+\definecolor{OliveGreen}{rgb}{0.14,0.7,0.14} % 34-139-34
+\definecolor{light-gray}{gray}{0.99}
+\usepackage{listings}       % write source code in LaTeX
+\usepackage{url}
+\decimalpoint
+\newcommand{\matlab}{$\text{MATLAB}^{\text{\textregistered}}$~}
+
+\begin{document}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+\textbf{Métodos Numéricos Aplicados a la Ingeniería Civil}.\\
+Profesor: Felipe Uribe Castillo.\\
+Taller III: Integración y Solución de ODEs.\\
+Versión No. 1}}}
+\end{center}
+
+\vspace{1cm}
+\noindent El plazo para la entrega del taller es hasta el \emph{Viernes 29 de Abril (11:00am)}. Por cada hora de retraso en la entrega del trabajo se les descontará 0.1 unidades en la nota final. 
+
+\begin{enumerate}
+ \item Sobre el perfil de un río se tomaron los siguientes datos de distancia ($x$) y profundidad ($h$): 
+  \begin{table}[!hb]
+  \centering
+  \begin{tabular}{c|cccccccc}
+   $x$ [m] & 0 & 1.5  & 3.4 & 5.9 & 7.8 & 10.4 & 11.9 & 14  \\
+   \hline
+   $h$ [m] & 0 & 1.92 & 2   & 2   & 2.4 & 2.6  & 2.25 & 0
+  \end{tabular}
+ \end{table}
+ 
+ El área transversal del río se puede calcular como la integral $A = \int_{a}^{b} h(x)\mathrm{d}x$. Utilice las reglas de Newton-Cotes (trapecio y Simpson 3/8) para aproximar el valor de esta integral a mano. Calcule el error absoluto para cada método utilizando como valor exacto el calculado por las funciones de integración de MATLAB (\texttt{trapz} y \texttt{quad}). 
+ 
+ \emph{Nota:} Para la regla de Simpson 3/8 sobrará el último punto (pues son polinomios de grado 3), así para los puntos dados quedarán 2 reglas de 3/8. Haga la grafica para observar las particiones. Para usar el \texttt{quad} use la función de \matlab \texttt{interp1} para generar la ``function handle''.
+
+ \item Sobre un rascacielos el viento ejerce una fuerza distribuida, la cual se ha medido en diferentes alturas:
+ \begin{table}[!hb]
+  \centering
+  \begin{tabular}{c|ccccccccc}
+   $h$ [m]   & 0 & 30  & 60   & 90   & 120  & 150  & 180  & 210  & 240 \\
+   \hline
+   $w$ [N/m] & 0 & 340 & 1200 & 1600 & 2700 & 3100 & 3200 & 3500 & 3800
+  \end{tabular}
+ \end{table}
+ 
+ Calcule la fuerza resultante de dicha carga distribuida ($F = \int_{a}^{b} w(x)\mathrm{d}x$) y su punto de acción (centroide del área bajo la curva: $\bar{x}=\int_{a}^{b} x w(x)\mathrm{d}x/\int_{a}^{b} w(x)\mathrm{d}x$). Utilice el método de Romberg con $k=3$ y $n=4$ a mano. Compare sus resultados con el programa visto en clase (para generar la ``function handle'' de estos puntos use el comando de \matlab \texttt{interp1}, ó bien modifique el programa para que acepte los puntos evaluados de la función, en lugar de la función).
+
+
+\item La función de error ``$\text{erf}(x)$'' se define como la integral:
+ \begin{equation}
+  \text{erf}(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} \exp\left(-x^2\right) \mathrm{d} x
+ \end{equation}
+
+ pero también puede definirse como la solución a la ecuación diferencial:
+ \begin{equation}
+  y'(x) = \frac{2}{\sqrt{\pi}} \exp\left(-x^2\right) \quad \text{con} \quad y(x_0) = 0
+ \end{equation}
+
+ Programe el método de RK $3/8$ y el de ABM 4 (use como base los programas hechos en clase), para resolver esta ecuación diferencial en el intervalo $0\leq x \leq 2$ con un $h=0.1$. Compare sus resultados con la función de \matlab \texttt{ode45}; además realizar una segunda comparación graficando directamente la función de \matlab \texttt{erf(x)} evaluada en el intervalo de solución. Mostrar los resultados en una sola gráfica. 
+ 
+ \emph{Nota:} Para ABM4 use las siguientes expresiones,
+ \begin{align}
+  \text{Predictor}\quad \tilde{y}_{k+3} &= y_{k+2} + \frac{h}{12}\left(23f(t_{k+2},y_{k+2}) - 16f(t_{k+1},y_{k+1}) + 5f(t_{k},y_{k})\right) \\
+  \text{Corrector}\quad y_{k+3} &= y_{k+2} + \frac{h}{12}\left(5f(t_{k+3},\tilde{y}_{k+3}) + 8f(t_{k+2},y_{k+2}) - f(t_{k+1},y_{k+1})\right) 
+ \end{align}
+ \url{http://www.math.iit.edu/~fass/478578_Chapter_2.pdf}
+
+\end{enumerate}
+
+\end{document}

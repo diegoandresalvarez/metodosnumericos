@@ -1,0 +1,7 @@
+/* Coefficients of Gauss-Quadrature */
+f(x) := 1$     eq1: c0*f(x0) + c1*f(x1) = integrate(f(x),x,-1,1)$
+f(x) := x$     eq2: c0*f(x0) + c1*f(x1) = integrate(f(x),x,-1,1)$
+f(x) := x^2$   eq3: c0*f(x0) + c1*f(x1) = integrate(f(x),x,-1,1)$
+f(x) := x^3$   eq4: c0*f(x0) + c1*f(x1) = integrate(f(x),x,-1,1)$
+
+solve([eq1, eq2, eq3, eq4], [c0, c1, x0, x1]);

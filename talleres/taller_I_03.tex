@@ -1,0 +1,192 @@
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage[english,spanish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{fourier}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,bm}
+\usepackage{mathtools}  
+\mathtoolsset{showonlyrefs} 
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[letterpaper,margin=2cm]{geometry}
+\usepackage{url}
+\definecolor{OliveGreen}{rgb}{0.14,0.7,0.14} % 34-139-34
+\definecolor{light-gray}{gray}{0.99}
+\usepackage{listings}       % write source code in LaTeX
+\lstdefinelanguage{Matlab}%
+{keywords={gt,lt,gt,lt,amp,abs,acos,acosh,acot,acoth,acsc,acsch,%
+      all,angle,ans,any,asec,asech,asin,asinh,atan,atan2,atanh,auread,%
+      auwrite,axes,axis,balance,bar,bessel,besselk,bessely,beta,%
+      betainc,betaln,blanks,bone,break,brighten,capture,cart2pol,%
+      cart2sph,caxis,cd,cdf2rdf,cedit,ceil,cell,cell2mat,chol,cla,clabel,clc,clear,clf,clock,close,colmmd,Colon,colorbar,colormap,ColorSpec,colperm,%
+      comet,comet3,compan,compass,computer,cond,condest,conj,contour,%
+      contour3,contourc,contrast,conv,conv2,cool,copper,corrcoef,cos,%
+      cosh,cot,coth,cov,cplxpair,cputime,cross,csc,csch,csvread,%
+      csvwrite,cumprod,cumsum,cylinder,date,dbclear,dbcont,dbdown,%
+      dbquit,dbstack,dbstatus,dbstep,dbstop,dbtype,dbup,ddeadv,ddeexec,%
+      ddeinit,ddepoke,ddereq,ddeterm,ddeunadv,deblank,dec2hex,deconv,%
+      del2,delete,double,demo,det,diag,diary,diff,diffuse,dir,disp,dlmread,%
+      dlmwrite,dmperm,dot,drawnow,echo,eig,ellipj,ellipke,else,elseif,%
+      end,engClose,engEvalString,engGetFull,engGetMatrix,engOpen,%
+      engOutputBuffer,engPutFull,engPutMatrix,engSetEvalCallback,%
+      engSetEvalTimeout,engWinInit,eps,erf,erfc,erfcx,erfinv,error,%
+      errorbar,etime,etree,eval,exist,exp,expint,expm,expo,eye,fclose,%
+      feather,feof,ferror,feval,fft,fft2,fftshift,fgetl,fgets,figure,%
+      fill,fill3,filter,filter2,find,findstr,fix,flag,fliplr,%
+      flipud,floor,flops,fmin,fmins,fopen,for,format,fplot,fprintf,%
+      fread,frewind,fscanf,fseek,ftell,full,function,funm,fwrite,fzero,%
+      gallery,gamma,gammainc,gammaln,gca,gcd,gcf,gco,get,getenv,%
+      getframe,ginput,gplot,gradient,gray,graymon,grid,griddata,%
+      gtext,hadamard,hankel,help,hess,hex2dec,hex2num,hidden,hilb,hist,%
+      hold,home,hostid,hot,hsv,hsv2rgb,if,ifft,ifft2,imag,image,%
+      imagesc,Inf,info,int2str,interp1,interp2,interpft,inv,%
+      invhilb,isempty,isglobal,ishold,isieee,isinf,isletter,isnan,%
+      isreal,isspace,issparse,isstr,inf,int,isequal,jet,keyboard,kron,lasterr,lcm,legend,legendre,length,lin2mu,line,linspace,load,log,log10,log2,%
+      loglog,logm,logspace,lookfor,lower,ls,lscov,lsim,lu,magic,matClose,%
+      matDeleteMatrix,matGetDir,matGetFp,matGetFull,matGetMatrix,%
+      matGetNextMatrix,matGetString,matlabrc,matlabroot,matOpen,%
+      matPutFull,matPutMatrix,matPutString,max,mean,median,menu,mesh,%
+      meshc,meshgrid,meshz,mexAtExit,mexCallMATLAB,mexdebug,%
+      mexErrMsgTxt,mexEvalString,mexFunction,mexGetFull,mexGetMatrix,%
+      mexGetMatrixPtr,mexPrintf,mexPutFull,mexPutMatrix,mexSetTrapFlag,%
+      min,more,movie,moviein,mu2lin,mxCalloc,mxCopyCharacterToPtr,%
+      mxCopyComplex16ToPtr,mxCopyInteger4ToPtr,mxCopyPtrToCharacter,%
+      mxCopyPtrToComplex16,mxCopyPtrToInteger4,mxCopyPtrToReal8,%
+      mxCopyReal8ToPtr,mxCreateFull,mxCreateSparse,mxCreateString,%
+      mxFree,mxFreeMatrix,mxGetIr,mxGetJc,mxGetM,mxGetN,mxGetName,%
+      mxGetNzmax,mxGetPi,mxGetPr,mxGetScalar,mxGetString,mxIsComplex,%
+      mxIsFull,mxIsNumeric,mxIsSparse,mxIsString,mxIsTypeDouble,%
+      mxSetIr,mxSetJc,mxSetM,mxSetN,mxSetName,mxSetNzmax,mxSetPi,%
+      mxSetPr,NaN,nargchk,nargin,nargout,nchoosek,newplot,nextpow2,nnls,nnz,%
+      nonzeros,norm,normest,null,num2str,nzmax,ode23,ode45,orient,orth,%
+      pack,pascal,patch,path,pause,pcolor,pi,pink,pinv,plot,plot3,%
+      pol2cart,polar,poly,polyder,polyeig,polyfit,polyval,polyvalm,%
+      pow2,print,printopt,prism,prod,pwd,qr,qrdelete,qrinsert,quad,%
+      quad8,quit,quiver,qz,rand,randn,randperm,rank,rat,rats,rbbox,%
+      rcond,real,realmax,realmin,refresh,rem,reset,reshape,residue,%
+      return,rgb2hsv,rgbplot,rootobject,roots,rose,rosser,rot90,rotate,%
+      round,rref,rrefmovie,rsf2csf,save,saxis,schur,sec,sech,semilogx,%
+      semilogy,set,setstr,shading,sign,sin,sinh,size,slice,sort,sound,%
+      spalloc,sparse,spaugment,spconvert,spdiags,specular,speye,spfun,%
+      sph2cart,sphere,spinmap,spline,spones,spparms,sprandn,sprandsym,%
+      sprank,sprintf,spy,sqrt,sqrtm,ss,sscanf,stairs,startup,std,stem,%
+      str2mat,str2num,strcmp,strings,strrep,strtok,subplot,subscribe,%
+      subspace,surf,surface,surfc,surfl,surfnorm,svd,symbfact,%
+      symmmd,symrcm,sym2poly,tan,tanh,tempdir,tempname,terminal,text,tic,title,%
+      toc,toeplitz,trace,trapz,tril,triplequad,triu,type,uicontrol,uigetfile,%
+      uimenu,uiputfile,unix,unwrap,upper,vander,ver,version,view,%
+      viewmtx,waitforbuttonpress,waterfall,wavread,wavwrite,what,%
+      whatsnew,which,while,whitebg,who,whos,wilkinson,wk1read,%
+      wk1write,xlabel,xor,ylabel,zeros,zlabel,zoom,%
+      bvpinit,bvp4c,daspect,delaunay,deval,initmesh,false,%
+    minor,ones,pdetool,repmat,switch,tight,trimesh,true,triplot,xlsread,factorial, expand,sym,subs},
+   sensitive=true,
+%   keywordstyle=\color{OliveGreen}\emph,  % palabras reservadas en letra verde y negrilla
+   commentstyle =\color{OliveGreen},
+   morecomment  =[l][commentstyle]{\%\%}{},
+   morestring   =[b][\ttfamily\emph]",
+   showspaces   =false,          % show spaces adding particular underscores
+   showstringspaces=false,    % underline spaces within strings
+   basicstyle      =\ttfamily\footnotesize,
+   backgroundcolor =\color{light-gray},
+   framexleftmargin=0cm,
+   frame=shadowbox,
+   fontadjust=true,
+   rulesepcolor=\color{OliveGreen},
+   emph={for,if,end,while,function,switch,otherwise,case,return},
+   emphstyle=\color{blue},
+}
+\decimalpoint
+\newcommand{\matlab}{$\text{MATLAB}^{\text{\textregistered}}$~}
+
+\begin{document}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+\textbf{Métodos Numéricos Aplicados a la Ingeniería Civil}.\\
+Profesor: Felipe Uribe Castillo.\\
+Taller I: Solución de sistemas de ecuaciones lineales e Interpolación.\\
+Versión No. 3}}}
+\end{center}
+
+\vspace{1cm}
+\noindent El plazo para la entrega del taller es hasta el \emph{Miércoles 9 de Marzo (6:00pm)}. Por cada día de retraso en la entrega del trabajo se les descontará 0.3 unidades de la nota final.
+
+Enviar a mi correo, un comprimido que incluya el archivo en word (convertido a pdf) o \LaTeX~ con la solución de los puntos y los programas desarrollados. Los programas deberán estar bien comentados, bien identados y demás recomendaciones vistas en clase (se rebajará si el código no cumple con esto). Habrán bonificaciones si ustedes hacen su propia versión de los programas vistos en clase. 
+
+\begin{enumerate}
+ \item La expansión en series de potencia para la función seno es:
+  \begin{equation}
+   \sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots
+  \end{equation}
+ 
+ La siguiente función de \matlab usa esta expansión para calcular el $\sin(x)$:
+ \lstset{language=Matlab}
+\begin{lstlisting}[numbers=left]
+
+function s = powersin(x)
+%% POWERSIN. Calcula el seno de un angulo [rad] usando series de potencia
+s = 0;
+t = x;
+n = 1;
+while s+t ~= s;
+  s = s + t;
+  t = -x.^2/((n+1)*(n+2)).*t;
+  n = n + 2;
+end
+ \end{lstlisting}
+ \emph{i).} Explique qué hace que el ciclo \texttt{while} termine. \emph{ii).} Calcule el valor del seno para los siguientes ángulos $\theta=\pi/2,~11\pi/2,~21\pi/2,~31\pi/2$. \emph{iii).} Con base en los resultados para los 4 ángulos $\theta$, qué tan precisa es la estimación del seno usando esta función (error absoluto y relativo)?, cuántos terminos se calcularon?, cuál es el término más grande de la serie?
+
+ \item Con $n=3$, diga en cuáles de los siguientes casos la matriz $\mathbf{A}$ es definida positiva:
+ \begin{itemize}
+  \item \texttt{A = magic(n)}
+  \item \texttt{A = hilb(n)}
+  \item \texttt{R = randn(n,n); A = R' * R}
+  \item \texttt{R = randn(n,n); A = R' + R}
+  \item \texttt{R = randn(n,n); I = eye(n,n); A = R' + R + n*I}
+ \end{itemize}
+ 
+ \item Modifique los programas \texttt{gauss.m} y \texttt{lu\_decomp.m} para que detecten, antes de realizar el método, cuando la matriz $\mathbf{A}$ sea singular. Use como criterios el número de condición y el determinante (puede usar los comandos de \matlab \texttt{cond} y \texttt{det}), explique detalladamente que hacen estos comandos.
+ 
+ \item Un problema importante en ingenieria estructural es el de encontrar las fuerzas en un cercha.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=0.40\textwidth]{cercha.pdf}
+ \end{figure}
+
+ Este tipo de estructura se puede describir, luego de un balance de fuerzas, como un sistema de ecuaciones lineales acopladas. La sumatoria de fuerzas en $x$ e $y$ para el nodo 1 son:
+ \begin{align}
+  \sum F_x & = −F_1 \cos(30) + F_3 \cos(60) + P_{1x}  = 0 \\
+  \sum F_y & = −F_1 \sin(30) − F_3 \sin(60) + P_{1y} = 0
+ \end{align}
+ para el nodo 2 son:
+ \begin{align}
+  \sum F_x & = F_2 + F_1 \cos(30) + P_{2x} + R_{2x} = 0 \\
+  \sum F_y & = F_1 \sin(30) + P_{2y} + R_{2y} = 0
+ \end{align}
+ para el nodo 3 son:
+ \begin{align}
+  \sum F_x & = - F_2 - F_3 \cos(60) + P_{3x}  = 0 \\
+  \sum F_y & = F_3 \sin(60) + P_{3y} + R_{3y} = 0
+ \end{align}
+ en este caso, se aplica la fuerza externa de $P_{1y}=-2000$ N sobre el nodo 1 y las demás $P_{ix}$ y $P_{iy}$ serán cero pues no tenemos más cargas sobre la cercha. Observe que el vector de incógnitas será $\mathbf{x}=[ F_1, F_2, F_3, R_{2x}, R_{2y}, R_{3y}]^{\text{T}}$ y el vector de respuestas $\mathbf{b}=[P_{1x},P_{1y},P_{2x},P_{2y},P_{3x},P_{3y}]^{\text{T}}$.
+ 
+ \emph{i).} Exprese este conjunto de ecuaciones algebraicas en forma matricial. \emph{ii).} Calcule a mano usando el método de descomposición LU solo la matriz L y la matriz U, la solución a este sistema la puede hacer usando \matlab (osea encontrar las fuerzas axiales de las barras $F_{i}$). \emph{iii).} Compare su respuesta con los métodos vistos en estática.
+
+ \item Suponga que los siguientes datos miden la temperatura ($T$) de un lago con respecto a la profundidad ($z$) del mismo.
+ 
+ \begin{table}[!hb]
+  \centering
+  \begin{tabular}{c|ccccccccc}
+   $T$ [C] & 22.8 & 22.8 & 22.8 & 20.6 & 13.9 & 11.7 & 11.1 & 11.1 \\
+   \hline
+   $z$ [m] & 0    & 2.3  & 4.9  & 9.1  & 13.7 & 18.3 & 22.9 & 27.2
+  \end{tabular}
+ \end{table}
+ 
+ \emph{i).} Utilice su criterio para encontrar el mejor método de interpolación (polinomial, Lagrange, Newton, Chebyshev, lineal), diga las razones por las cuales lo escogió (usar comandos y graficar en MATLAB para facilitar la elección). \emph{ii).} Muestre los resultados en un gráfico. \emph{iii).} Con base en el método escogido calcule a mano la forma del polinomio para poder encontrar la profundidad de la termoclina (\url{https://en.wikipedia.org/wiki/Thermocline}). Esta se encuentra en el punto de inflexión de la curva profundidad-temperatura, es decir en el punto para el cual $\frac{d^2T}{dz^2}=0$.
+
+\end{enumerate}
+
+\end{document}

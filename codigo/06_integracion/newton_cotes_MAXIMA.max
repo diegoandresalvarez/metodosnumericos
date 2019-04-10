@@ -1,0 +1,26 @@
+/* CODE FOR CALCULATING NEWTON-COTES FORMULAS*/
+/* 4th-point closed formula (3/8 Simpson) */
+load("interpol");
+x2 : x1 + h;
+x3 : x1 + 2*h;
+x4 : x1 + 3*h;
+lagrange([[x1,f1], [x2,f2], [x3,f3], [x4,f4]]);
+integrate(%, x, x1, x4);
+factor(%);
+
+/* ANSWER: (3*(f4+3*f3+3*f2+f1)*h)/8 */
+
+/* ------------------------------------------------ */
+
+/* 4th-point open formula */
+load("interpol");
+x1 : a + h;
+x2 : a + 2*h;
+x3 : a + 3*h;
+x4 : a + 4*h;
+b  : a + 5*h;
+lagrange([[x1,f1], [x2,f2], [x3,f3], [x4,f4]]);
+integrate(%, x, a, b);
+factor(%);
+
+/* ANSWER: (5*(11*f4+f3+f2+11*f1)*h)/24 */
