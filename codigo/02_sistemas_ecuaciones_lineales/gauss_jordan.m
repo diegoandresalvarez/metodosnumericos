@@ -3,7 +3,7 @@
 % WHO   DATE            WHAT
 % DAA   Aug 24, 2009    First algorithm
 %
-% DAA - Diego Andrés Alvarez Marín - diegoandresalvarez@gmx.net
+% DAA - Diego AndrÃ©s Alvarez MarÃ­n - daalvarez@unal.edu.co
 
 %A = fix(10*rand(6,6));
 %b = fix(10*rand(6,3));
