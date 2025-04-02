@@ -61,6 +61,13 @@ El curso se desarrollará teniendo en cuenta diferentes aspectos pedagógicos co
 Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación como C o C++ este es un lenguaje con una sintaxis simple y mucho más fácil de aprender. Adicionalmente existe en internet mucho material educativo gratis y de excelente calidad sobre el tema.
 
 ## Contenido
+### 0. REPASO DE PYTHON (3 semanas)
+* Cuadernos de Jupyter
+* Librerías:
+  * NumPy 
+  * Matplotlib
+  * Introducción a pandas
+
 ### 1. SOLUCION DE ECUACIONES ALGEBRAICAS LINEALES (2 semanas)
 * Introducción
 * Eliminación Gauss-Jordan
@@ -228,8 +235,7 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
 Siempre que usted falte a un examen, debe haber algún documento que lo exonere de dicha inasistencia. Cuando usted por algún motivo de fuerza mayor no pueda asistir al examen, usted debe avisarle al profesor con anterioridad ya sea personalmente o por correo. En esos casos en lo posible, debe demostrarlo. Por ejemplo: si le tocó viajar a su pueblo esa semana porque algo sucedió un evento familiar de trascendencia, entonces una forma de certificar que usted viajó son los tiquetes de ida y vuelta a su pueblo. Sin una excusa o una notificación previa no se repetirán los exámenes y usted tendrá como nota un cero.
 
 ### Fraude en los exámenes o trabajos
-Estos se penalizarán así:
-
+El fraude es una conducta intolerable, que se penalizará así:
 * Nota cero en el trabajo/examen en cuestión.
 * Carta al Consejo de Facultad reportando el suceso.
 * Se pierden adicionalmente todos los privilegios que se tienen de una calificación con notas mayores a 5.0 en todas las notas obtenidas en el semestre y cualquier bonificación adicional de notas que el profesor decida otorgar al grupo.
