@@ -10,10 +10,18 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 
 ### Exámenes:
 * **Examen 1:** 20%
-    * Fecha (semana XXX):
+    * Fecha:  miércoles abril 30 de 2025 (semana 4):
     * Tema: 
-      * Tema 1
-      * Tema 2
+      * Video tutoriales de Python:
+        - [Video 1](https://www.youtube.com/watch?v=tQZy0U8s9LY)
+        - [Video 2](https://www.youtube.com/watch?v=Kp4Mvapo5kc)
+        - [Video 3](https://www.youtube.com/watch?v=TkN2i-_4N4g)
+      * [Cuestionario](cuestionario_ex_1.md) el cual se basa en:
+        - [Diapositivas 01 - Introducción a Python](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/diapositivas/python3/01_-_Introduccion_a_Python.pdf)
+        - [Diapositivas 02 - Tipos de datos escalares en Python](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/diapositivas/python3/02_-_Tipos_de_datos_escalares_en_Python.pdf)
+        - [Diapositivas 02 - Tipos de datos en lenguaje C](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/diapositivas/C/02_-_Tipos_de_datos.pdf)
+      * [Tutorial de Jupyter](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_jupyter.ipynb)
+      * [Tutorial de NumPy](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)
 
 * **Examen 2:** 20%
     * Fecha (semana XXX):
