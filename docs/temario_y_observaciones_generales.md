@@ -24,19 +24,23 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
       * [Tutorial de NumPy](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)
 
 * **Examen 2:** 20%
-    * Fecha (semana XXX):
+    * Fecha (semana 7): viernes, mayo 23 de 2025
     * Tema: 
-      * Tema 1
-      * Tema 2
+      * [Tutorial de NumPy](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)
+      * Parte 3 (páginas 253--367) del libro de [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúan las secciones ***.
+      * [Cuestionario](cuestionario_ex_2.md)
+      * Cuadernos de Jupyter:
+        - ***
+        - ***
 
 * **Examen 3:** 20% 
-    * Fecha (semana XXX):
+    * Fecha (semana 12):
     * Tema: 
       * Tema 1
       * Tema 2
 
 * **Examen 4:** 20%
-    * Fecha (semana XXX):
+    * Fecha (semana 16):
     * Tema: 
       * Tema 1
       * Tema 2
