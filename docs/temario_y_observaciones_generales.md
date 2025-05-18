@@ -24,14 +24,39 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
       * [Tutorial de NumPy](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)
 
 * **Examen 2:** 20%
-    * Fecha (semana 7): viernes, mayo 23 de 2025
+    * Fecha (semana 8): viernes, mayo 30 de 2025
     * Tema: 
       * [Tutorial de NumPy](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)
       * Parte 3 (páginas 253--367) del libro de [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúan las secciones ***.
       * [Cuestionario](cuestionario_ex_2.md)
       * Cuadernos de Jupyter:
-        - ***
-        - ***
+        - [Gaussian elimination with backsubstitution](https://github.com/diegoandresalvarez/metodosnumericos/blob/master/codigo/02_sistemas_ecuaciones_lineales/gauss_elimination_with_backsubstitution.ipynb)
+        - [Gaussian-Jordan elimination with partial pivoting](https://github.com/diegoandresalvarez/metodosnumericos/blob/master/codigo/02_sistemas_ecuaciones_lineales/gauss_jordan_elimination.ipynb)
+        - [Cholesky decomposition](https://github.com/diegoandresalvarez/metodosnumericos/blob/master/codigo/02_sistemas_ecuaciones_lineales/cholesky_decomposition.ipynb)
+      * Diapositivas:
+        - [Solución del sistema K*a - f = q en elementos finitos](https://github.com/diegoandresalvarez/elementosfinitos/blob/master/diapositivas/01_Repaso_Calculo_Matricial.pdf)
+
+<!---
+** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-0.pdf|2.0 Introduction]]
+** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-1.pdf|2.1 Gauss-Jordan Elimination]]
+*** http://mathworld.wolfram.com/Gauss-JordanElimination.html
+*** http://es.wikipedia.org/wiki/Eliminaci%C3%B3n_de_Gauss-Jordan
+*** http://en.wikipedia.org/wiki/Gaussian_elimination
+*** http://en.wikipedia.org/wiki/Reduced_row_echelon_form
+** [[http://www.fizyka.umk.pl/nrbook/c2-2.pdf|2.2 Gaussian Elimination with Backsubstitution]]
+*** http://mathworld.wolfram.com/GaussianElimination.html
+*** http://en.wikipedia.org/wiki/Gaussian_elimination
+*** http://es.wikipedia.org/wiki/Forma_de_filas_en_escalon (ver además comando rref de MATLAB)
+*** http://en.wikipedia.org/wiki/Row_echelon_form
+** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-3.pdf|2.3 LU Decomposition and Its Applications]]
+** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-5.pdf|2.5 Iterative Improvement of a Solution to Linear Equations]]
+** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-7.pdf|2.7 Sparse Linear Systems]]
+*** http://en.wikipedia.org/wiki/Sparse_matrix
+*** http://en.wikipedia.org/wiki/Conjugate_gradient_method
+** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-9.pdf|2.9 Cholesky Decomposition]]
+*** http://en.wikipedia.org/wiki/Cholesky_decomposition
+** Comandos de MATLAB: \, linsolve, lu, chol, rref, rank, inv, eye, sparse, full, spy
+--->        
 
 * **Examen 3:** 20% 
     * Fecha (semana 12):
@@ -89,27 +114,6 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
 * Mejoramiento iterativo a la solución de ecuaciones lineales
 * Matrices ralas
 * Programación con PYTHON y contextualizacion a la ingeniería civil
-<!---
-** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-0.pdf|2.0 Introduction]]
-** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-1.pdf|2.1 Gauss-Jordan Elimination]]
-*** http://mathworld.wolfram.com/Gauss-JordanElimination.html
-*** http://es.wikipedia.org/wiki/Eliminaci%C3%B3n_de_Gauss-Jordan
-*** http://en.wikipedia.org/wiki/Gaussian_elimination
-*** http://en.wikipedia.org/wiki/Reduced_row_echelon_form
-** [[http://www.fizyka.umk.pl/nrbook/c2-2.pdf|2.2 Gaussian Elimination with Backsubstitution]]
-*** http://mathworld.wolfram.com/GaussianElimination.html
-*** http://en.wikipedia.org/wiki/Gaussian_elimination
-*** http://es.wikipedia.org/wiki/Forma_de_filas_en_escalon (ver además comando rref de MATLAB)
-*** http://en.wikipedia.org/wiki/Row_echelon_form
-** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-3.pdf|2.3 LU Decomposition and Its Applications]]
-** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-5.pdf|2.5 Iterative Improvement of a Solution to Linear Equations]]
-** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-7.pdf|2.7 Sparse Linear Systems]]
-*** http://en.wikipedia.org/wiki/Sparse_matrix
-*** http://en.wikipedia.org/wiki/Conjugate_gradient_method
-** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-9.pdf|2.9 Cholesky Decomposition]]
-*** http://en.wikipedia.org/wiki/Cholesky_decomposition
-** Comandos de MATLAB: \, linsolve, lu, chol, rref, rank, inv, eye, sparse, full, spy
---->
 
 ### 2. INTERPOLACION (2 semanas)
 * Introducción
