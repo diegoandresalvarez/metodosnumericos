@@ -1,12 +1,25 @@
 # Recursos varios
 
-![Caricatura](../imagenes/comment_your_code.jpg)
-**<span style="color: #000000; font-size: 250%;">Recursos </span>**
-
-[[image:http://imgs.xkcd.com/comics/tech_support_cheat_sheet.png]]
+![Caricatura](http://imgs.xkcd.com/comics/tech_support_cheat_sheet.png)
 Tomada de: http://imgs.xkcd.com/comics/tech_support_cheat_sheet.png
-Diagrama de flujo: [[http://en.wikipedia.org/wiki/Flowchart|artículo de wikipedia]]
+Diagrama de flujo: [Artículo de WIKIPEDIA](http://en.wikipedia.org/wiki/Flowchart)
 
+## Books on numerical methods
+* Richard L. Burden, J. Douglas Faires, Annette M. Burden (2011) - [Numerical analysis. 9 ed.] (https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)
+* Germund Dahlquist, Ake Björck - [Numerical methods in scientific computing](https://informatika.usk.ac.id/umam/numericalmethods.pdf)
+* Toby Driscoll - [Fundamentals of Numerical Computation](https://tobydriscoll.net/book/fnc/)
+    - https://github.com/tobydriscoll/fnc-extras
+    - https://www.youtube.com/playlist?list=PLvUvOH0OYx3BcZivtXMIwP6hKoYv0YvGn
+* Amos Gilat, Vish Subramaniam (2014) - [Numerical Methods For Engineers And Scientists](https://nasim.hormozgan.ac.ir/ostad/UploadedFiles/387098/387098-3847126181260765.pdf)
+* Egwu E Kalu, Duc Nguyen - [Textbook: Numerical Methods with Applications](https://nm.mathforcollege.com/textbook-numerical-methods-with-applications/)
+* Jaan Kiusalaas (2015) - [Numerical Methods in Engineering with MATLAB, 3e](https://aceskyambogo.wordpress.com/wp-content/uploads/2016/04/numerical-methods-in-engineering-with-matlab-jaan-kiusalaas-annotated.pdf)
+* Qingkai Kong, Timmy Siauw, Alexandre Bayen(2020) - [Python Programming and Numerical Methods](https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/Index.html)
+* Kyle Novak - [Numerical methods for scientific computing](https://www.equalsharepress.com/media/NMFSC.pdf)
+* William H. Press, et. al. (2007). [Numerical Recipes 3rd Edition: The Art of Scientific Computing 3rd Edition](https://numerical.recipes/book.html)
+* Timothy Sauer (2012) - [Numerical Analysis](https://eclass.aueb.gr/modules/document/file.php/MISC249/Sauer%20-%20Numerical%20Analysis%202e.pdf)
+* Eric Sullivan (2022) [Numerical Methods - An Inquiry-Based Approach With Python](https://numericalmethodssullivan.github.io/)
+
+<!---
 ----
 <span style="font-size: 1.4em; line-height: 1.5;">**LÓGICA DE PROGRAMACIÓN**</span>
 
@@ -76,3 +89,5 @@ GNU Scientific Library (GSL) es una biblioteca escrita en lenguaje C, destinada 
 ----
 =OTROS LINKS= 
 * <span style="background-color: #ffffff;">[[http://marekrychlik.com/cgi-bin/gauss.cgi|Eliminación Gaussiana]]</span>
+
+!--->
