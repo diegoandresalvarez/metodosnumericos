@@ -13,7 +13,7 @@ Diagrama de flujo: [Artículo de WIKIPEDIA](http://en.wikipedia.org/wiki/Flowcha
 * Amos Gilat, Vish Subramaniam (2014) - [Numerical Methods For Engineers And Scientists](https://nasim.hormozgan.ac.ir/ostad/UploadedFiles/387098/387098-3847126181260765.pdf)
 * Egwu E Kalu, Duc Nguyen - [Textbook: Numerical Methods with Applications](https://nm.mathforcollege.com/textbook-numerical-methods-with-applications/)
 * Jaan Kiusalaas (2015) - [Numerical Methods in Engineering with MATLAB, 3e](https://aceskyambogo.wordpress.com/wp-content/uploads/2016/04/numerical-methods-in-engineering-with-matlab-jaan-kiusalaas-annotated.pdf)
-* Qingkai Kong, Timmy Siauw, Alexandre Bayen(2020) - [Python Programming and Numerical Methods](https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/Index.html)
+* Qingkai Kong, Timmy Siauw, Alexandre Bayen (2020) - [Python Programming and Numerical Methods](https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/Index.html)
 * Kyle Novak - [Numerical methods for scientific computing](https://www.equalsharepress.com/media/NMFSC.pdf)
 * William H. Press, et. al. (2007) - [Numerical Recipes 3rd Edition: The Art of Scientific Computing 3rd Edition](https://numerical.recipes/book.html)
 * Timothy Sauer (2012) - [Numerical Analysis](https://eclass.aueb.gr/modules/document/file.php/MISC249/Sauer%20-%20Numerical%20Analysis%202e.pdf)
