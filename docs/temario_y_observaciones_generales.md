@@ -35,6 +35,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
         - [Cholesky decomposition](https://github.com/diegoandresalvarez/metodosnumericos/blob/master/codigo/02_sistemas_ecuaciones_lineales/cholesky_decomposition.ipynb)
       * Diapositivas:
         - [Solución del sistema K*a - f = q en elementos finitos](https://github.com/diegoandresalvarez/elementosfinitos/blob/master/diapositivas/01_Repaso_Calculo_Matricial.pdf)
+      * NOTA: no se permitirá sacar una hoja de fórmulas en este examen.
 
 <!---
 ** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-0.pdf|2.0 Introduction]]
@@ -72,7 +73,9 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 
 * **Talleres de programación + sustentación:** 20%
 
+<!---
 En los exámenes siempre se preguntará: teoría, demostraciones, ejercicios numéricos y ejercicios de programación. <code style="color: #ff0000;">Se permite para los exámenes traer una hoja tamaño carta en la cual ustedes pueden escribir (POR UN SOLO LADO) todas las fórmulas y comandos de MATLAB/MAXIMA/PYTHON que deseen. En la hoja no se pueden ni escribir programas, ni textos explicativos, ni se pueden escribir demostraciones. Dicha hoja debe ser de elaboración personal (no se pueden traer las hojas hechas por compañeros de este o semestres pasados) y debe hacerse a mano (se prohíbe explícitamente traer fotocopias/impresiones/reducciones).</code>
+--->
 
 ## Descripción de la asignatura métodos numéricos
 Los métodos numéricos constituyen una herramienta fundamental en la formación integral del ingeniero civil, proporcionando técnicas matemáticas precisas para resolver problemas complejos que carecen de soluciones analíticas exactas. Esta asignatura establece el puente entre la teoría matemática y las aplicaciones prácticas que el profesional enfrentará en su vida laboral.
