@@ -4,19 +4,15 @@
   - Eliminación gaussiana
   - Gauss-Jordan (para encontrar la inversa de la matriz A).
 
-* Preguntas varias de programación de computadores
+* Preguntas varias de programación de computadores (de python, de numpy y de scipy). Estudiar los códigos con juicio.
 
-* Explica el concepto de una matriz banda. Como se puede modificar la eliminación gausiana para que funcione eficientemente en este tipo de matrices.
-   
-* ¿Qué es una matriz rala?
-   
 * Describa qué es un sistema lineal de ecuaciones bien condicionado, mal condicionado y uno singular. En qué se diferencian?
    
 * Explique la regla de Cramer. ¿Qué condición debe cumplirse para que un sistema tenga una solución única según la regla de Cramer? ¿Por qué la regla de Cramer se vuelve computacionalmente ineficiente a medida que aumenta el número de ecuaciones?
    
 * Describa el proceso de eliminación hacia adelante en la eliminación gaussiana. 
     - ¿Qué tipo de operaciones de fila están permitidas en la eliminación gaussiana?
-    - ¿Cómo se calcula el determinante de A usando la eliminación gaussiana?
+    - ¿Cómo se calcula el determinante de A usando la eliminación gausiana?
     - ¿Qué es el pivote en la eliminación gaussiana?
     - ¿Cómo se selecciona el pivote en el pivoteo parcial? 
     - ¿Por qué la división por un número muy pequeño puede aumentar el error?
@@ -30,7 +26,7 @@
 
 * Describa el proceso de la sustitución hacia adelante.
 
-* ¿Qué es una norma matricial? Describa al menos cuatro normas matriciales.
+* ¿Qué es un vector? ¿Qué es un espacio vectorial? ¿Qué es una norma? ¿Qué es una norma matricial? Describa al menos cuatro normas matriciales.
 
 * ¿Por qué el determinante no es una buena medida del mal condicionamiento de una matriz?
 
@@ -38,6 +34,7 @@
     - Definición
     - ¿Qué mide el número de condición de una matriz?
     - ¿Cómo un pequeño cambio en el vector del lado derecho afecta la solución de un sistema lineal desde el punto de vista del número de condición de una matriz?
+    - Explique la desigualdad $\frac{\|\delta \boldsymbol{x}\|}{\|\boldsymbol{x}\|} \leq \kappa(\boldsymbol{A}) \frac{\|\delta \boldsymbol{b}\|}{\|\boldsymbol{b}\|}$.
    
 * Explique qué es la eliminación de Gauss-Jordan
     - ¿En qué se diferencia la eliminación de Gauss-Jordan de la eliminación gaussiana?
@@ -57,4 +54,19 @@
     - ¿Qué caracteriza a una matriz definida positiva?
     - Describe los pasos para resolver  $Ax = b$  usando la descomposición de Cholesky.
     - ¿Cómo se calcula el determinante de A usando la descomposición de Cholesky? 
-  
+
+* Explica el concepto de una matriz banda. Como se puede modificar la eliminación gausiana para que funcione eficientemente en este tipo de matrices.
+   
+* ¿Qué es una matriz rala? ¿Qué tipo de técnicas existen para su solución?
+
+* Con respecto a los sistemas de ecuaciones Ax=b con matrices A ralas:
+    - ¿En qué consisten los métodos directos? ¿Cuándo se usan? ¿Cuáles son sus ventajas?
+    - ¿En qué consisten los métodos iterativos? ¿Cuándo se usan? ¿Cuáles son sus ventajas?
+    
+* ¿En qué consiste el algoritmo reversed Cuthill-McKee?
+
+* ¿Qué son las matrices precondicionadoras?
+
+* Describa las propiedades de la matriz de rigidez K para un sistema estructural. ¿Cuáles son las propiedades de la matriz Kdd?
+
+
