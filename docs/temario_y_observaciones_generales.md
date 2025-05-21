@@ -35,6 +35,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
         - [Cholesky decomposition](https://github.com/diegoandresalvarez/metodosnumericos/blob/master/codigo/02_sistemas_ecuaciones_lineales/cholesky_decomposition.ipynb)
       * Diapositivas:
         - [Solución del sistema K*a - f = q en elementos finitos](https://github.com/diegoandresalvarez/elementosfinitos/blob/master/diapositivas/01_Repaso_Calculo_Matricial.pdf)
+        - [Estado del arte en solucionadores de sistemas de ecuaciones Ax=b para el método de elementos finitos: directos vs. iterativos](https://github.com/diegoandresalvarez/metodosnumericos/blob/master/codigo/02_sistemas_ecuaciones_lineales/solvers_Ax_b.pdf)
       * NOTA: no se permitirá sacar una hoja de fórmulas en este examen.
 
 <!---
