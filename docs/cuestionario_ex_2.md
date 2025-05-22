@@ -1,7 +1,7 @@
 # Cuestionario para el examen 2 de métodos numéricos aplicados a la ingeniería civil
 
 * Se le dará un sistema linear de 4 ecuaciones con 4 incógnitas y se solicitará resolverlo usando uno de los siguientes métodos:
-  - Eliminación gaussiana
+  - Eliminación gaussiana (resolver el sistema de ecuaciones)
   - Gauss-Jordan (para encontrar la inversa de la matriz A).
 
 * Preguntas varias de programación de computadores (de python, de numpy y de scipy). Estudiar los códigos con juicio.
@@ -57,16 +57,33 @@
 
 * Explica el concepto de una matriz banda. Como se puede modificar la eliminación gausiana para que funcione eficientemente en este tipo de matrices.
    
-* ¿Qué es una matriz rala? ¿Qué tipo de técnicas existen para su solución?
+* ¿Qué es una matriz rala? 
+    - ¿Cuáles son las ventajas de su uso?
+    - ¿Qué tipo de técnicas existen para su solución?
 
 * Con respecto a los sistemas de ecuaciones Ax=b con matrices A ralas:
     - ¿En qué consisten los métodos directos? ¿Cuándo se usan? ¿Cuáles son sus ventajas?
     - ¿En qué consisten los métodos iterativos? ¿Cuándo se usan? ¿Cuáles son sus ventajas?
+
+* Con respecto a los solucionadores directos e iterativos del sistema lineal de ecuaciones Ax=b explique:
+    - Principios
+    - Ventajas
+    - Desventajas
+    - Factores clave para la selección del solucionador
+
+* Con respecto a los solucionadores directos explique los principios de los métodos
+    - Skyline
+    - Multifrontal
+    - Pardiso
+    - MUMPS
     
+* Con respecto a los solucionadores iterativos explique los principios de los métodos
+    - Conjugated gradient
+    - GMRES
+    - Parámetros que se deben ajustar. Criterios para la selección de esos parámetros.
+
 * ¿En qué consiste el algoritmo reversed Cuthill-McKee?
 
 * ¿Qué son las matrices precondicionadoras?
 
 * Describa las propiedades de la matriz de rigidez K para un sistema estructural. ¿Cuáles son las propiedades de la matriz Kdd?
-
-
