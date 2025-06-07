@@ -60,11 +60,31 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 ** Comandos de MATLAB: \, linsolve, lu, chol, rref, rank, inv, eye, sparse, full, spy
 --->        
 
-* **Examen 3:** 20% 
-    * Fecha (semana 12):
-    * Tema: 
-      * Tema 1
-      * Tema 2
+* **Examen 3:** 20%
+    * Fecha (semana 12): viernes, junio 27 de 2025
+    * Tema:
+      * Capítulo 18 Interpolación (páginas 496--534) del libro de [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúan las secciones 18.1 (Newton interpolating polynomials).
+      * [Interpolation](http://en.wikipedia.org/wiki/Interpolation)
+      * [Nearest-neighbor interpolation](http://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
+      * [Linear interpolation](http://en.wikipedia.org/wiki/Linear_interpolation)
+      * [Lagrange interpolating polynomial](http://en.wikipedia.org/wiki/Lagrange_form)
+      * Hermite interpolating polynomial
+      * [Polynomial interpolation](http://en.wikipedia.org/wiki/Polynomial_interpolation)
+      * [Spline interpolation](http://en.wikipedia.org/wiki/Spline_interpolation)
+        * Cubic splines
+        * Hermite cubic splines
+      * [Multivariate interpolation](http://en.wikipedia.org/wiki/Multivariate_interpolation)
+      * [Cuestionario](cuestionario_ex_3.md)
+      * Cuadernos de Jupyter:
+        - [Polynomials with NumPy (np.poly1d)](../codigo/03_interpolacion/Poly1D_numpy.ipynb)
+        - [Interpolation using Vandermonde matrices](../codigo/03_interpolacion/interpolation_vandermonde.ipynb)
+        - [TO IMPLEMENT: Lagrange interpolating polynomial](***)
+        - [Hermite interpolating polynomial](../codigo/03_interpolacion/Hermite_interpolation.ipynb)
+        - [Interpolation in 1D with SciPy](../codigo/03_interpolacion/interpolation_1D.ipynb)
+        - [Cubic spline interpolation](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb)
+        - [TO IMPLEMENT: Interpolation with MS EXCEL](***)        
+        - [TO IMPLEMENT: Multivariate interpolation](***)
+      * NOTA: no se permitirá sacar una hoja de fórmulas en este examen.
 
 * **Examen 4:** 20%
     * Fecha (semana 16):
@@ -128,15 +148,6 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
 * Interpolación con splines
 * Interpolación en varias dimensiones
 * Programación con PYTHON y contextualizacion a la ingeniería civil
-<!---
-** [[http://en.wikipedia.org/wiki/Interpolation|Introducción]]
-** [[http://en.wikipedia.org/wiki/Nearest-neighbor_interpolation|Interpolación por los vecinos más cercanos]]
-** [[http://en.wikipedia.org/wiki/Linear_interpolation|Interpolación lineal]]
-** [[http://en.wikipedia.org/wiki/Lagrange_form|Interpolación con la fórmula de Lagrange]]
-** [[http://en.wikipedia.org/wiki/Polynomial_interpolation|Interpolación polinomial (cuadrática y cúbica)]]
-** [[http://en.wikipedia.org/wiki/Spline_interpolation|Interpolación con splines]]
-** [[http://en.wikipedia.org/wiki/Multivariate_interpolation|Interpolación en varias dimensiones]]
---->
 
 ### 3. MINIMIZACION Y MAXIMIZACION DE FUNCIONES. REGRESIÓN LINEAL Y NO LINEAL (4 semanas)
 * Introducción
