@@ -78,7 +78,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
       * Cuadernos de Jupyter:
         - [Polynomials with NumPy (np.poly1d)](../codigo/03_interpolacion/Poly1D_numpy.ipynb)
         - [Interpolation using Vandermonde matrices](../codigo/03_interpolacion/interpolation_vandermonde.ipynb)
-        - [TO IMPLEMENT: Lagrange interpolating polynomial](***)
+        - [Lagrange interpolating polynomial](../codigo/03_interpolacion/Lagrange_interpolation.ipynb)
         - [Hermite interpolating polynomial](../codigo/03_interpolacion/Hermite_interpolation.ipynb)
         - [Interpolation in 1D with SciPy](../codigo/03_interpolacion/interpolation_1D.ipynb)
         - [Cubic spline interpolation](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb)
