@@ -58,12 +58,13 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 ** [[http://www.mpi-hd.mpg.de/astrophysik/HEA/internal/Numerical_Recipes/f2-9.pdf|2.9 Cholesky Decomposition]]
 *** http://en.wikipedia.org/wiki/Cholesky_decomposition
 ** Comandos de MATLAB: \, linsolve, lu, chol, rref, rank, inv, eye, sparse, full, spy
---->        
+--->
 
 * **Examen 3:** 20%
     * Fecha (semana 12): viernes, junio 27 de 2025
     * Tema:
       * Capítulo 18 Interpolación (páginas 496--534) del libro de [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúan las secciones 18.1 (Newton interpolating polynomials).
+      * Capítulo 3 Interpolación (sección 3.5) del libro Richard L. Burden, J. Douglas Faires, Annette M. Burden (2011) - [Numerical analysis. 9 ed.](https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)
       * [Interpolation](http://en.wikipedia.org/wiki/Interpolation)
       * [Nearest-neighbor interpolation](http://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
       * [Linear interpolation](http://en.wikipedia.org/wiki/Linear_interpolation)
@@ -76,14 +77,14 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
       * [Multivariate interpolation](http://en.wikipedia.org/wiki/Multivariate_interpolation)
       * [Cuestionario](cuestionario_ex_3.md)
       * Cuadernos de Jupyter:
-        - [Polynomials with NumPy (np.poly1d)](../codigo/03_interpolacion/Poly1D_numpy.ipynb)
+        - [Polynomials with NumPy (using the Poly1D class)](../codigo/03_interpolacion/Poly1D_numpy.ipynb)
         - [Interpolation using Vandermonde matrices](../codigo/03_interpolacion/interpolation_vandermonde.ipynb)
         - [Lagrange interpolating polynomial](../codigo/03_interpolacion/Lagrange_interpolation.ipynb)
         - [Hermite interpolating polynomial](../codigo/03_interpolacion/Hermite_interpolation.ipynb)
         - [Interpolation in 1D with SciPy](../codigo/03_interpolacion/interpolation_1D.ipynb)
         - [Cubic spline interpolation](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb)
         - [TO IMPLEMENT: Interpolation with MS EXCEL](***)        
-        - [TO IMPLEMENT: Multivariate interpolation](***)
+        - [Multivariate interpolation on structured grids](../codigo/03_interpolacion/multivariate_structured_grid_interpolation.ipynb)
       * NOTA: no se permitirá sacar una hoja de fórmulas en este examen.
 
 * **Examen 4:** 20%
