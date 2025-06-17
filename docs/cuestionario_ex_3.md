@@ -8,9 +8,9 @@ You will be asked several questions related to computer programming, including t
 
 ### 2. Function Continuity Classification
 
-* Describe the classification of functions according to their continuity: $C^0$, $C^1$, $C^2$, etc.
+* Describe the classification of functions according to their continuity: $C^0$, $C^1$, $C^2$, $C^k$, $C^\infty$, etc.
 * Why is continuity of derivatives important in interpolation for engineering applications?
-* Give examples of methods that ensure $C^0$, $C^1$, and $C^2$ continuity.
+* Give examples of methods that ensure $C^0$, $C^1$, and $C^2$, etc, continuity.
 
 ---
 
@@ -59,7 +59,7 @@ For each of the following interpolation techniques, explain:
 
 ### 6. Vandermonde Matrices
 
-Describe the properties of Vandermonde matrices.
+Homework: Describe the properties of Vandermonde matrices.
 
 ---
 
@@ -88,7 +88,7 @@ Explain the difficulties and limitations associated with polynomial interpolatio
 
 * Derive the formulation of cubic spline interpolation.
 * In which contexts are cubic splines typically used?
-* Explain and derive the formulation for the following boundary conditions:
+* Homework: Explain and derive the formulation for the following boundary conditions:
   * Natural
   * Clamped
   * Not-a-knot
