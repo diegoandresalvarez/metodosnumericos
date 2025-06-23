@@ -63,7 +63,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 * **Examen 3:** 20%
     * Fecha (semana 12): viernes, junio 27 de 2025
     * Tema:
-      * Capítulo 18 Interpolación (páginas 496--534) del libro de [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúan las secciones 18.1 (Newton interpolating polynomials).
+      * Capítulo 18 Interpolación (páginas 496--534) del libro de [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúa la sección 18.1 (Newton interpolating polynomials).
       * Capítulo 3 Interpolación (sección 3.5) del libro Richard L. Burden, J. Douglas Faires, Annette M. Burden (2011) - [Numerical analysis. 9 ed.](https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)
       * [Interpolation](http://en.wikipedia.org/wiki/Interpolation)
       * [Nearest-neighbor interpolation](http://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
@@ -83,8 +83,9 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
         - [Hermite interpolating polynomial](../codigo/03_interpolacion/Hermite_interpolation.ipynb)
         - [Interpolation in 1D with SciPy](../codigo/03_interpolacion/interpolation_1D.ipynb)
         - [Cubic spline interpolation](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb)
-        - [TO IMPLEMENT: Interpolation with MS EXCEL](***)        
         - [Multivariate interpolation on structured grids](../codigo/03_interpolacion/multivariate_structured_grid_interpolation.ipynb)
+        - [Multivariate interpolation on scattered data](../codigo/03_interpolacion/multivariate_scattered_data_interpolation.ipynb)        
+        - [TO IMPLEMENT: Interpolation with MS EXCEL](***)        
       * NOTA: no se permitirá sacar una hoja de fórmulas en este examen.
 
 * **Examen 4:** 20%
