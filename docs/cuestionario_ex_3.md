@@ -97,6 +97,7 @@ Explain the difficulties and limitations associated with polynomial interpolatio
 ---
 
 ### 9. Additional concepts
+* What is Occam's razor about? How do you apply it in the context of optimization?
 * Homework: Describe the properties of Vandermonde matrices.
 * Explain Horner’s method for efficient polynomial evaluation. Why is this method computationally efficient?
 * Explain Voronoi tessellations. What are their main properties?
