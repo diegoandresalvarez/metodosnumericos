@@ -75,6 +75,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
         * Cubic splines
         * Hermite cubic splines
       * [Multivariate interpolation](http://en.wikipedia.org/wiki/Multivariate_interpolation)
+      * [Feature scaling](https://en.wikipedia.org/wiki/Feature_scaling)
       * [Cuestionario](cuestionario_ex_3.md)
       * Cuadernos de Jupyter:
         - [Polynomials with NumPy (using the Poly1D class)](../codigo/03_interpolacion/Poly1D_numpy.ipynb)

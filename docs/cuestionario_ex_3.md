@@ -102,3 +102,5 @@ Explain the difficulties and limitations associated with polynomial interpolatio
 * Explain Horner’s method for efficient polynomial evaluation. Why is this method computationally efficient?
 * Explain Voronoi tessellations. What are their main properties?
 * Explain Delaunay's triangulations. What are their main properties?
+* Explain Occam's razor. How is it used for selecting an interpolation algorithm?
+* Explain feature scaling. Motivation, methods, advantages, etc.
