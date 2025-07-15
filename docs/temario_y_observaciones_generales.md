@@ -11,7 +11,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 ### Exámenes:
 * **Examen 1:** 20%
     * Fecha:  miércoles abril 30 de 2025 (semana 4):
-    * Tema: 
+    * Temas: 
       * Video tutoriales de Python:
         - [Video 1](https://www.youtube.com/watch?v=tQZy0U8s9LY)
         - [Video 2](https://www.youtube.com/watch?v=Kp4Mvapo5kc)
@@ -25,7 +25,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 
 * **Examen 2:** 20%
     * Fecha (semana 8): viernes, mayo 30 de 2025
-    * Tema: 
+    * Temas: 
       * [Tutorial de NumPy](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)
       * Parte 3 (páginas 253--367) del libro de [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúan las secciones ***.
       * [Cuestionario](cuestionario_ex_2.md)
@@ -62,9 +62,9 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 
 * **Examen 3:** 20%
     * Fecha (semana 12): viernes, julio 4 de 2025
-    * Tema:
-      * Capítulo 18 Interpolación (páginas 496--534) del libro de [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúa la sección 18.1 (Newton interpolating polynomials).
-      * Capítulo 3 Interpolación (sección 3.5) del libro Richard L. Burden, J. Douglas Faires, Annette M. Burden (2011) - [Numerical analysis. 9 ed.](https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)
+    * Temas:
+      * Capítulo 18 Interpolación (páginas 496--534) del libro [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). Se exceptúa la sección 18.1 (Newton interpolating polynomials).
+      * Capítulo 3 Interpolación (sección 3.5) del libro [Richard L. Burden, J. Douglas Faires, Annette M. Burden (2011). Numerical analysis. 9 ed.](https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)
       * [Interpolation](http://en.wikipedia.org/wiki/Interpolation)
       * [Nearest-neighbor interpolation](http://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
       * [Linear interpolation](http://en.wikipedia.org/wiki/Linear_interpolation)
@@ -90,10 +90,17 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
       * NOTA: no se permitirá sacar una hoja de fórmulas en este examen.
 
 * **Examen 4:** 20%
-    * Fecha (semana 16):
-    * Tema: 
-      * Tema 1
-      * Tema 2
+    * Fecha (semana 16): viernes, julio 25 de 2025
+    * Temas:
+      * Capítulos 13 y 14 Optimización (páginas 350--394) del libro [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). 
+      * Capítulo 6 "Derivarive-based optimization" del libro [Eiji Mizutani, Jyh-Shing Roger Jang (1997). Neuro-Fuzzy and Soft Computing. Prentice Hall](http://www.soukalfi.edu.sk/01_NeuroFuzzyApproach.pdf)
+      * [Cuestionario](cuestionario_ex_4.md)
+      * Cuadernos de Jupyter:
+        - [Univariate optimization with SciPy](../codigo/05_minimizacion_de_funciones/univariate_optimization.ipynb)
+        - [Gradient descent, Newton's method and Levenberg-Marquardt algorithms](../codigo/05_minimizacion_de_funciones/gradient_descent_newton_LM.ipynb)
+        - [Multivariate unconstrained optimization with Python using methods for local optimization](../codigo/05_minimizacion_de_funciones/unconstrained_optimization_python.ipynb)
+    * NOTA: no se permitirá sacar una hoja de fórmulas en este examen.
+
 
 * **Talleres de programación + sustentación:** 20%
 
@@ -140,7 +147,7 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
 * Descomposición LU
 * Mejoramiento iterativo a la solución de ecuaciones lineales
 * Matrices ralas
-* Programación con PYTHON y contextualizacion a la ingeniería civil
+* Programación con PYTHON y contextualización a la ingeniería civil
 
 ### 2. INTERPOLACION (2 semanas)
 * Introducción
@@ -150,7 +157,7 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
 * Interpolación polinomial (cuadrática y cúbica)
 * Interpolación con splines
 * Interpolación en varias dimensiones
-* Programación con PYTHON y contextualizacion a la ingeniería civil
+* Programación con PYTHON y contextualización a la ingeniería civil
 
 ### 3. MINIMIZACION Y MAXIMIZACION DE FUNCIONES. REGRESIÓN LINEAL Y NO LINEAL (4 semanas)
 * Introducción
@@ -164,23 +171,14 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
   * 2.Método de Newton-Raphson
   * 3 Método de Levenberg-Marquardt
 * Regresion lineal y no lineal
-* Programación con PYTHON y contextualizacion a la ingeniería civil
-<!---
-** Chapter 10: Minimization or Maximization of Functions
-** 10.0 Introduction
-** 10.1 Initially Bracketing a Minimum
-** 10.2 Golden Section Search in One Dimension
-** 10.3 Parabolic Interpolation and Brent's Method in One Dimension
-** 10.4 One-Dimensional Search with First Derivatives
-** 10.6 Line Methods in Multidimensions
---->
+* Programación con PYTHON y contextualización a la ingeniería civil
 
 ### 4. RAICES DE ECUACIONES Y SISTEMAS DE ECUACIONES NO LINEALES (2 semanas)
-* introducción
+* Introducción
 * Método de la acotacion y de la bisección
 * Método de Newton-Raphson
 * Método de Newton-Raphson para la solucion de sistemas de ecuaciones no lineales
-* Programación con PYTHON y contextualizacion a la ingeniería civil
+* Programación con PYTHON y contextualización a la ingeniería civil
 <!---
 ** 9.0 Introduction
 ** 9.1 Bracketing and Bisection
@@ -198,7 +196,7 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
 * Extrapolaciones de Richardson
 * Integración de Romberg
 * Integración con cuadraturas de Gauss-Legendre
-* Programación con PYTHON y contextualizacion a la ingeniería civil
+* Programación con PYTHON y contextualización a la ingeniería civil
 <!---
 * [[http://en.wikipedia.org/wiki/Numerical_integration|Introducción]]
 * [[http://en.wikipedia.org/wiki/Newton%E2%80%93Cotes_formulas|Métodos de Newton-Cotes]]
@@ -218,7 +216,7 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
 * Métodos de Runge-Kutta
 * Métodos predictor-corrector: Adams-Bashford-Moulton
 * Stiff ordinary differential equations
-* Programación con PYTHON y contextualizacion a la ingeniería civil
+* Programación con PYTHON y contextualización a la ingeniería civil
 
 ### 7. NUMEROS ALEATORIOS (2 semanas)
 * Introducción
@@ -233,7 +231,7 @@ Se enseñará Python 3 ya que a diferencia de otros lenguajes de programación c
   * Método ziggurat y transformacion de Box-Muller
 * Integracion simple de Monte Carlo
 * Introducció a la confiabilidad estructural y cálculo de probabilidad de falla de sistemas estructurales
-* Programación con PYTHON y contextualizacion a la ingeniería civil
+* Programación con PYTHON y contextualización a la ingeniería civil
 <!---
 ** Introducción
 *** http://en.wikipedia.org/wiki/Random_number_generator
