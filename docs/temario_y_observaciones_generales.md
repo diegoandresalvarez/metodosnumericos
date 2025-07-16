@@ -93,7 +93,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
     * Fecha (semana 16): viernes, julio 25 de 2025
     * Temas:
       * Capítulos 13 y 14 Optimización (páginas 350--394) del libro [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). 
-      * Capítulo 6 "Derivarive-based optimization" del libro [Eiji Mizutani, Jyh-Shing Roger Jang (1997). Neuro-Fuzzy and Soft Computing. Prentice Hall](http://www.soukalfi.edu.sk/01_NeuroFuzzyApproach.pdf)
+      * Capítulo 6 "Derivarive-based optimization" del libro [Jyh-Shing Roger Jang, Chuen-Tsai Sun, Eiji Mizutani (1997). Neuro-Fuzzy and Soft Computing. Prentice Hall](http://www.soukalfi.edu.sk/01_NeuroFuzzyApproach.pdf)
       * [Cuestionario](cuestionario_ex_4.md)
       * Cuadernos de Jupyter:
         - [Univariate optimization with SciPy](../codigo/05_minimizacion_de_funciones/univariate_optimization.ipynb)
