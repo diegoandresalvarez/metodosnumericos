@@ -290,7 +290,7 @@ class Truss:
                 x0 =       self.xnod[self.obtener_nodos_a_optimizar(),:].flatten(), 
                 method =   'CG',
                 callback = callbackF,
-                options =  {'maxiter':200}
+                options =  {'maxiter':1000}
             )
 
             # Calculate metrics
@@ -364,13 +364,13 @@ t1.agregar_apoyo(0)
 t1.agregar_apoyo(8, x_set=False)
 t1.dibujar()
 t1.calcular_fuerzas_axiales()
-results = t1.optimize()
+results = t1.optimize(gif_path="output/animation1.gif")
 print(results)
 plt.show()
 
 
 # %% Truss 2
-'''
+
 xnod = np.array([
     (0.0, 0.0),
     (0.0, 1.0), 
@@ -394,13 +394,13 @@ t2.agregar_apoyo(0)
 t2.agregar_apoyo(8, x_set=False)
 t2.dibujar()
 t2.calcular_fuerzas_axiales()
-results = t2.optimize()
+results = t2.optimize(gif_path="output/animation2.gif")
 print(results)
 plt.show()
-'''
+
 
 ## % # Truss 3
-'''
+
 xnod = np.array([
     (0.0, 0.0), # 0
     (0.0, 1.0), 
@@ -442,13 +442,13 @@ t3.agregar_apoyo(0)
 t3.agregar_apoyo(2)
 t3.dibujar()
 t3.calcular_fuerzas_axiales()
-results = t3.optimize()
+results = t3.optimize(gif_path="output/animation3.gif")
 print(results)
 plt.show()
-'''
+
 
 # %% Truss 4
-'''
+
 # holding a side load
 xnod = np.array([
     (0.0, 0.0),
@@ -471,10 +471,9 @@ t4.agregar_apoyo(0)
 t4.agregar_apoyo(2)
 t4.dibujar()
 t4.calcular_fuerzas_axiales()
-results = t4.optimize()
+results = t4.optimize(gif_path="output/animation4.gif")
 print(results)
 plt.show()
 
 fuerzas = t4.calcular_fuerzas_axiales()
 print(fuerzas)
-'''
