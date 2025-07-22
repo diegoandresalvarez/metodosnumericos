@@ -55,7 +55,7 @@ For each of the following optimization techniques, explain:
 
 **Optimization methods:**
 
-* Univariate interpolation:
+* Univariate optimization:
   * Golden section search
   * Parabolic interpolation
   * Newton's method
@@ -70,3 +70,10 @@ For each of the following optimization techniques, explain:
   * Trust-region methods
   * Quasi-Newton methods
   * Conjugated gradient
+
+  * Line search:
+    * Exact vs. inexact line search methods
+    * Inexact line search methods:
+      * Goldstein test
+      * Wolfe conditions
+      * Armujo's rule
