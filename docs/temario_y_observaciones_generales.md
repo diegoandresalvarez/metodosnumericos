@@ -109,6 +109,24 @@ En los exámenes siempre se preguntará: teoría, demostraciones, ejercicios num
 --->
 
 ## Descripción de la asignatura métodos numéricos
+<!---
+PRESENTACIÓN EN 2000 CARACTERES (PARA EL SIA):
+
+En este curso de pregrado se abordarán los métodos numéricos y se aplicarán específicamente en el ámbito de la ingeniería civil. Los métodos numéricos permiten analizar sistemas estructurales complejos, modelar comportamientos de materiales, simular condiciones de carga y predecir respuestas ante fenómenos naturales como sismos o vientos en aquellos casos que no existe una fórmula matemática explícita para el cálculo. El contenido programático es extenso y abarca desde la resolución de ecuaciones lineales, esenciales para el análisis estructural, hasta simulaciones de Monte Carlo que evalúan la confiabilidad estructural. Esta asignatura establece el puente entre la teoría matemática y las aplicaciones prácticas que el profesional enfrentará en su vida laboral.
+
+Se espera que al final del curso, el estudiante esté en capacidad de:
+* Introducir la técnica básica del cálculo numérico y explicar su objetivo fundamental: encontrar soluciones aproximadas a problemas complejos utilizando procedimientos matemáticos que se pueden programar fácilmente con un computador.
+* Hacer énfasis en la programación de computadores como una herramienta para obtener soluciones numéricas de problemas cuya solución analítica es extremadamente compleja.
+
+Además, el estudiante fortalecerá:
+* Pensamiento algorítmico y rigor en el manejo del error numérico.
+* Habilidad para programar en Python soluciones de álgebra lineal (Gauss, LU, Cholesky), interpolación, optimización (Newton-Raphson, Levenberg-Marquardt), integración (Simpson, Gauss-Legendre), ecuaciones diferenciales (Runge-Kutta) y simulación estocástica (Monte Carlo).
+* Actitud crítica frente a la confiabilidad de un resultado, esencial para decisiones que impactan la seguridad pública.
+* Aporta al perfil profesional la capacidad de modelar, optimizar recursos y comunicar decisiones basadas en evidencia computacional.
+
+Metodología: clases presenciales, talleres prácticos de código, proyectos aplicados y trabajo dirigido.
+--->
+
 Los métodos numéricos constituyen una herramienta fundamental en la formación integral del ingeniero civil, proporcionando técnicas matemáticas precisas para resolver problemas complejos que carecen de soluciones analíticas exactas. Esta asignatura establece el puente entre la teoría matemática y las aplicaciones prácticas que el profesional enfrentará en su vida laboral.
 
 En ingeniería civil, donde se diseñan y calculan estructuras que garantizan la seguridad de las personas, la precisión es vital. Los métodos numéricos permiten analizar sistemas estructurales complejos, modelar comportamientos de materiales, simular condiciones de carga y predecir respuestas ante fenómenos naturales como sismos o vientos.
