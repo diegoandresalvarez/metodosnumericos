@@ -6,6 +6,7 @@ Diagrama de flujo: [Artículo de WIKIPEDIA](http://en.wikipedia.org/wiki/Flowcha
 
 ## Books on numerical methods
 * Richard L. Burden, J. Douglas Faires, Annette M. Burden (2011) - [Numerical analysis. 9 ed.](https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)
+* Richard L. Burden, J. Douglas Faires, Annette M. Burden (2016) - [Numerical analysis. 10 ed.](http://ir.harambeeuniversity.edu.et/handle/123456789/1576)
 * Germund Dahlquist, Ake Björck - [Numerical methods in scientific computing](https://informatika.usk.ac.id/umam/numericalmethods.pdf)
 * Toby Driscoll - [Fundamentals of Numerical Computation](https://tobydriscoll.net/book/fnc/)
     - https://github.com/tobydriscoll/fnc-extras
