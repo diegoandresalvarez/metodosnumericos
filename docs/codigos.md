@@ -3,6 +3,7 @@
 A continuación encontrará códigos de programación realizados en MATLAB, MAXIMA y PYTHON 3.
 
 ![Image](http://imgs.xkcd.com/comics/ballmer_peak.png)
+
 Fuente: <http://xkcd.com/323/>
 
 ## Nota para bajar los programas

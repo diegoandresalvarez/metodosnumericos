@@ -14,7 +14,7 @@ El curso se evaluará mediante exámenes y talleres de programación (sustentado
 
 ### Exámenes:
 Ver tema de los exámenes en el archivo [examenes.md](examenes.md). Los exámenes se realizarán en las fechas que se indican a continuación:
-* **Examen 1:** Porcentaje: 20%. Miércoles 16 de septiebmre de 2026.
+* **Examen 1:** Porcentaje: 20%. Miércoles 16 de septiembre de 2026.
 * **Examen 2:** Porcentaje: 20%. Miércoles 14 de octubre de 2026.
 * **Examen 3:** Porcentaje: 20%. Miércoles 11 de noviembre de 2026.
 * **Examen 4:** Porcentaje: 20%. Viernes 11 de diciembre de 2026. 
