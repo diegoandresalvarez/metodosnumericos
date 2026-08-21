@@ -5,10 +5,6 @@ A continuación encontrará códigos de programación realizados en MATLAB, MAXI
 ![Image](http://imgs.xkcd.com/comics/ballmer_peak.png)
 Fuente: <http://xkcd.com/323/>
 
-![Image](http://www.jeffpalm.com/fox/fox.jpg)
-Fuente: no fuí capaz de encontrarla. Esta caricatura es de FOXTROT (http://www.foxtrot.com/). Finalmente observe que falta un `\n` al final del `printf()`.
-
-
 ## Nota para bajar los programas
 * Click derecho en 'Raw'
 * Damos Click derecho sobre el código > Guardar como...
