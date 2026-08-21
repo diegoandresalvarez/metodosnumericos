@@ -16,10 +16,10 @@ This is the reason why making numerical quadrature (like the trapezoidal rule or
 - Créditos: 3
 
 ## Tabla de contenido
-- [Temario y observaciones generales del curso](temario_y_observaciones_generales.md)
-- [Códigos](codigos.md)
-- [Recursos](recursos.md)
+- [Temario y observaciones generales del curso](docs/temario_y_observaciones_generales.md)
+- [Códigos](docs/codigos.md)
+- [Recursos](docs/recursos.md)
 
 # Examenes y talleres
-- [Tema de los exámenes](examenes.md)
-- [Talleres](talleres.md)
+- [Tema de los exámenes](docs/examenes.md)
+- [Talleres](docs/talleres.md)
