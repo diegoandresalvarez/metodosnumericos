@@ -14,8 +14,8 @@ This is the reason why making numerical quadrature (like the trapezoidal rule or
 - Tiempo de actividad autónoma por semana: 6 horas
 
 - Horario de clases:
-  - Miércoles 14:00-16:00 C203
-  - Viernes 14:00-16:00 C310
+  - Miércoles 14:00-16:00 C201
+  - Viernes 14:00-16:00 C201
 - 
 
 ## Tabla de contenido
