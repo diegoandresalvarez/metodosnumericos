@@ -5,16 +5,21 @@
 Fuente: <https://xkcd.com/135/>
 
 ## Examen 1
-* Video tutoriales de Python:
-    - [Video 1](https://www.youtube.com/watch?v=tQZy0U8s9LY)
-    - [Video 2](https://www.youtube.com/watch?v=Kp4Mvapo5kc)
-    - [Video 3](https://www.youtube.com/watch?v=TkN2i-_4N4g)
-* [Cuestionario](cuestionario_ex_1.md) el cual se basa en:
+* Video tutoriales de Python (estudie al menos uno de los siguientes videos):
+    - [Video 1 por HolaMundo](https://www.youtube.com/watch?v=tQZy0U8s9LY)
+    - [Video 2 por MoureDev](https://www.youtube.com/watch?v=Kp4Mvapo5kc)
+    - [Video 3 por Midudev](https://www.youtube.com/watch?v=TkN2i-_4N4g)
+* [Cuestionario](cuestionario_ex_1.md). Puede usar las siguientes diapositivas como material de estudio:
     - [Diapositivas 01 - Introducción a Python](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/diapositivas/python3/01_-_Introduccion_a_Python.pdf)
     - [Diapositivas 02 - Tipos de datos escalares en Python](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/diapositivas/python3/02_-_Tipos_de_datos_escalares_en_Python.pdf)
     - [Diapositivas 02 - Tipos de datos en lenguaje C](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/diapositivas/C/02_-_Tipos_de_datos.pdf)
-* [Tutorial de Jupyter](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_jupyter.ipynb)
-* [Tutorial de NumPy](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)
+* Jupyter Notebook. Puede usar el siguiente material como material de estudio:
+    - [Tutorial de Jupyter por Diego](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_jupyter.ipynb)
+    - Algún tutorial de Jupyter en YouTube de al menos media hora de duración (por ejemplo, [este](https://www.youtube.com/watch?v=HW29067qVWk) o [este](https://www.youtube.com/watch?v=DKiI6NfSIe8).
+* NumPy (conceptos básicos). Puede usar el siguiente material como material de estudio:
+    - [Tutorial de NumPy por Diego](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)
+    - [SciPy: NumPy and SciPy for Scientific Computing](https://scipy-lectures.org/intro/numpy/index.html)
+    - Algún tutorial de NumPy en YouTube de al menos dos horas de duración (por ejemplo, [este](https://www.youtube.com/watch?v=ZB7BZMhfPgk&pp=ygUPZW50aG91Z2h0IG51bXB5) o [este](https://www.youtube.com/watch?v=bveHFn0G4Zg).
 
 ## Examen 2
 * [Tutorial de NumPy](https://github.com/diegoandresalvarez/programaciondecomputadores/blob/master/codigo/python3/jupyter/tutorial_numpy.ipynb)

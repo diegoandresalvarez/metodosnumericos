@@ -18,7 +18,7 @@ NOTA: Este cuestionario es un resumen de los temas que se abordarán en el exame
 
 5. Explique la diferencia entre error absoluto y error relativo en cálculos numéricos. ¿Cuándo es más apropiado utilizar cada uno?
 
-1. Explique que es el "error aproximado relativo $\epsilon_a$"; relacione este error con el criterio de tolerancia $\epsilon_{tol} = 0.5 \times 10^{2-n}\%$ para garantizar $n$ cifras significativas exactas.
+1. Explique que es el "error aproximado relativo $\epsilon_a$"; relacione este error con el criterio de tolerancia $\epsilon_{tol} = 0.5 \times 10^{2-n}$% para garantizar $n$ cifras significativas exactas.
 
 ## Representación de los Números Enteros
 
