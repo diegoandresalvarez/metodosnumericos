@@ -1,17 +1,17 @@
 import numpy as np
 from math import factorial
 
-max_iterations = 99
-reversed_sum   = False
+n_terms      = 100
+reversed_sum = True
 
 def calculate_exponential(x, reversed_sum=False):
     """
     Calculate e^x using Taylor series expansion
     e^x = 1 + x + x²/2! + x³/3! + ...
     """
-    term = np.ones(max_iterations, dtype=np.float32)
+    term = np.empty(n_terms, dtype=np.float32)
 
-    for i in range(1, max_iterations):
+    for i in range(n_terms):
         term[i] = (x**i)/factorial(i)
 
     if reversed_sum:
@@ -26,15 +26,19 @@ def print_results(x, term, exp):
     print(f"{'i':>4} {'term':>20} {'sum':>20}")
     print("-" * 46)
 
-    for i in *range(5), *range(max_iterations-5, max_iterations):
+    for i in *range(5), *range(n_terms-5, n_terms):
         print(f"{i:>4} {term[i]:>20.10g} {exp[i]:>20.10g}")
 
     # Add exact value for comparison
     exact_value = np.exp(x)
     print("-" * 46)
-    print(f"Exact value = {exact_value:.10f}")
+    print(f"Exact value    = {exact_value:.10f}")
     print(f"Absolute error = {np.abs(exact_value-exp[-1]):.10f}")
     print(f"Relative error = {100*np.abs(exact_value-exp[-1])/exact_value:.10f}%")
+
+
+# Print reversed_sum
+print(f'{reversed_sum = }')
 
 # Calculate e^10
 print("Evaluation of e^10:")
