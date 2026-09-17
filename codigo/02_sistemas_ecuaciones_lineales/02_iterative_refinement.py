@@ -14,10 +14,10 @@ lu, piv = lu_factor(A)
 x_dx = lu_solve((lu, piv), b)
 
 # Compute residual in higher precision to avoid loss of significance
-r = A.astype(np.longdouble)@x_dx.astype(np.longdouble) - b.astype(np.longdouble)
+db = A.astype(np.longdouble)@x_dx.astype(np.longdouble) - b.astype(np.longdouble)
 
 # Solve for the correction term dx_star
-dx_star = lu_solve((lu, piv), r)
+dx_star = lu_solve((lu, piv), db)
 x = x_dx - dx_star
 
 print(f"Initial solve error: {np.linalg.norm(x_dx - x_true):.6e}")
