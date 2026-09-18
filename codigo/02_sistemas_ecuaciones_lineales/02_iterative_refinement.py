@@ -14,7 +14,7 @@ lu, piv = lu_factor(A)
 x_dx = lu_solve((lu, piv), b)
 
 # Compute residual in higher precision to avoid loss of significance
-db = A.astype(np.longdouble)@x_dx.astype(np.longdouble) - b.astype(np.longdouble)
+db = np.longdouble(A)@np.longdouble(x_dx) - np.longdouble(b)
 
 # Solve for the correction term dx_star
 dx_star = lu_solve((lu, piv), db)
