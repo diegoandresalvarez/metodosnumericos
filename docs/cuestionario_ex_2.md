@@ -7,7 +7,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Sistemas de ecuaciones lineales
 
-1. ¿Qué es un sistema de ecuaciones lineales? ¿Cómo puede representarse mediante una matriz? ¿Qué tipos de matriz $\mathbf{A}$ se pueden tener en el sistema de ecuaciones $\mathbf{Ax}=\mathbf{b}$?
+1. ¿Qué es un sistema de ecuaciones lineales? ¿Cómo puede representarse mediante una matriz? ¿Qué tipos de matriz $\boldsymbol{A}$ se pueden tener en el sistema de ecuaciones $\boldsymbol{Ax}=\boldsymbol{b}$?
 
 1. ¿Qué consideraciones deben tenerse en cuenta al resolver un sistema de ecuaciones lineales sobre determinado, sub determinado?
 
@@ -78,7 +78,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 1. ¿Qué es la sustitución hacia atrás? ¿Cómo se utiliza la sustitución hacia atrás?
 
-1. ¿Cómo se calcula el determinante de una matrix $\mathbf{A}$ usando la eliminación gausiana?
+1. ¿Cómo se calcula el determinante de una matrix $\boldsymbol{A}$ usando la eliminación gausiana?
 
 1. ¿Cuál es el costo computacional aproximado de la eliminación de Gauss para un sistema de $n$ ecuaciones? ¿De la sustitución hacia atrás?
 
@@ -121,7 +121,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Descomposición LU
 
-1. ¿Qué es la descomposición LU $\mathbf{A}=\mathbf{LU}$ de una matriz? ¿Cómo son las matrices $\mathbf{L}$ y $\mathbf{U}$? 
+1. ¿Qué es la descomposición LU $\boldsymbol{A}=\boldsymbol{LU}$ de una matriz? ¿Cómo son las matrices $\boldsymbol{L}$ y $\boldsymbol{U}$? 
 
 1. Describa la descomposición LU de Doolittle.
 
@@ -131,25 +131,25 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 1. Describa el proceso de la sustitución hacia adelante.
 
-1. ¿Cómo puede utilizarse la descomposición LU para resolver un sistema $\mathbf{Ax}=\mathbf{b}$?
+1. ¿Cómo puede utilizarse la descomposición LU para resolver un sistema $\boldsymbol{Ax}=\boldsymbol{b}$?
 
-1. ¿Por qué la descomposición LU puede ser más eficiente cuando se necesita resolver varios sistemas con la misma matriz $\mathbf{A}$?
+1. ¿Por qué la descomposición LU puede ser más eficiente cuando se necesita resolver varios sistemas con la misma matriz $\boldsymbol{A}$?
 
 1. ¿Cómo se relaciona la descomposición LU con la eliminación de Gauss?
 
-1. ¿Cómo se resuelve el sistema $\mathbf{Ly}=\mathbf{b}$ después de obtener una descomposición LU?
+1. ¿Cómo se resuelve el sistema $\boldsymbol{Ly}=\boldsymbol{b}$ después de obtener una descomposición LU?
 
-1. ¿Cómo se resuelve el sistema $\mathbf{Ux}=\mathbf{y}$?
+1. ¿Cómo se resuelve el sistema $\boldsymbol{Ux}=\boldsymbol{y}$?
 
 1. ¿Qué problemas pueden surgir al intentar calcular una descomposición LU sin pivoteo?
 
 1. ¿Cómo puede incorporarse el pivoteo en una descomposición LU?
 
-1. ¿Qué significa una descomposición de la forma $\mathbf{A}=\mathbf{PLU}$?
+1. ¿Qué significa una descomposición de la forma $\boldsymbol{A}=\boldsymbol{PLU}$?
 
-1. ¿Cuál es el papel de la matriz de permutación $\mathbf{P}$ en una descomposición LU con pivoteo?
+1. ¿Cuál es el papel de la matriz de permutación $\boldsymbol{P}$ en una descomposición LU con pivoteo?
 
-1. ¿Qué ventajas computacionales ofrece LU cuando se tienen múltiples vectores $\mathbf{b}$ para la misma matriz $\mathbf{A}$?
+1. ¿Qué ventajas computacionales ofrece LU cuando se tienen múltiples vectores $\boldsymbol{b}$ para la misma matriz $\boldsymbol{A}$?
 
 1. ¿Cómo se compara el costo de factorizar una matriz con el costo de resolver sistemas triangulares?
 
@@ -164,15 +164,15 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Descomposición de Cholesky
 
-1. ¿Qué es la descomposición de Cholesky $\mathbf{A}=\mathbf{LL}^T$? ¿A qué tipo de matrices se aplica? ¿Cuándo es especialmente útil la descomposición de Cholesky?
+1. ¿Qué es la descomposición de Cholesky $\boldsymbol{A}=\boldsymbol{LL}^T$? ¿A qué tipo de matrices se aplica? ¿Cuándo es especialmente útil la descomposición de Cholesky?
 
 1. ¿Qué pasos implica resolver un sistema de ecuaciones usando la descomposición de Cholesky?
     
 1. ¿Qué caracteriza a una matriz definida positiva (son tres condiciones equivalentes)?
 
-1. ¿Cómo puede utilizarse la descomposición de Cholesky para resolver un sistema lineal de ecuaciones $\mathbf{Ax}=\mathbf{b}$?
+1. ¿Cómo puede utilizarse la descomposición de Cholesky para resolver un sistema lineal de ecuaciones $\boldsymbol{Ax}=\boldsymbol{b}$?
 
-1. ¿Cómo se calcula el determinante de $\mathbf{A}$ usando la descomposición de Cholesky? 
+1. ¿Cómo se calcula el determinante de $\boldsymbol{A}$ usando la descomposición de Cholesky? 
 
 1. ¿Qué ventajas tiene Cholesky frente a una descomposición LU general?
 
@@ -212,10 +212,10 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 1. ¿Qué es una norma matricial inducida por una norma vectorial?
 
-1. Interprete físicamente o geométricamente la expresión $\|\mathbf{A}\|=\max_{\hat{\mathbf{v}} \in \mathbb{R}^n}
-\|\mathbf{A}\hat{\mathbf{v}}\|$. ¿Qué interpretación tiene esta desigualdad en términos del efecto de una matriz sobre la longitud de un vector?
+1. Interprete físicamente o geométricamente la expresión $\|\boldsymbol{A}\|=\max_{\hat{\boldsymbol{v}} \in \mathbb{R}^n}
+\|\boldsymbol{A}\hat{\boldsymbol{v}}\|$. ¿Qué interpretación tiene esta desigualdad en términos del efecto de una matriz sobre la longitud de un vector?
 
-1. Deduzca la desigualdad $\|\mathbf{Ax}\| \leq \|\mathbf{A}\| \|\mathbf{x}\|$ para una norma matricial inducida por una norma vectorial.
+1. Deduzca la desigualdad $\|\boldsymbol{Ax}\| \leq \|\boldsymbol{A}\| \|\boldsymbol{x}\|$ para una norma matricial inducida por una norma vectorial.
 
 1. ¿Qué es la norma espectral de una matriz? ¿Cómo se calcula?
 
@@ -223,7 +223,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 1. Defina la norma de Frobenius de una matriz. Explique por qué la norma de Frobenius puede interpretarse como una norma Euclidiana aplicada a todos los elementos de la matriz.
 
-1. Para un vector o matriz dada calcule su norma $\|\mathbf{x}\|_1$, $\|\mathbf{x}\|_2$ y $\|\mathbf{x}\|_\infty$.
+1. Para un vector o matriz dada calcule su norma $\|\boldsymbol{x}\|_1$, $\|\boldsymbol{x}\|_2$ y $\|\boldsymbol{x}\|_\infty$.
 
 
 ## Números de condición y sistemas mal condicionados
@@ -234,7 +234,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 1. ¿Por qué el determinante no es una buena medida del mal condicionamiento de una matriz?
 
-1. Deduzca e interprete la desigualdad $\frac{\|\delta \mathbf{x}\|}{\|\mathbf{x}\|} \leq \kappa(\mathbf{A}) \frac{\|\delta \mathbf{b}\|}{\|\mathbf{b}\|}$. ¿Qué representa cada término en la desigualdad y cómo se relaciona con el número de condición de una matriz.
+1. Deduzca e interprete la desigualdad $\frac{\|\delta \boldsymbol{x}\|}{\|\boldsymbol{x}\|} \leq \kappa(\boldsymbol{A}) \frac{\|\delta \boldsymbol{b}\|}{\|\boldsymbol{b}\|}$. ¿Qué representa cada término en la desigualdad y cómo se relaciona con el número de condición de una matriz.
 
 1. ¿Cómo un pequeño cambio en el vector del lado derecho afecta la solución de un sistema lineal desde el punto de vista del número de condición de una matriz?
 
@@ -246,14 +246,14 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 1. Explique la diferencia entre una matriz bien condicionada y una matriz mal condicionada.
 
-1. Si una matriz tiene $\kappa(\mathbf{A})=10^5$, ¿qué indica este resultado acerca de la sensibilidad de la solución de $\mathbf{Ax} = \mathbf{b}$ frente a perturbaciones en los datos?
+1. Si una matriz tiene $\kappa(\boldsymbol{A})=10^5$, ¿qué indica este resultado acerca de la sensibilidad de la solución de $\boldsymbol{Ax} = \boldsymbol{b}$ frente a perturbaciones en los datos?
 
 1. Explique la relación entre el número de condición y los errores relativos de los datos y de la solución.
 
 
 ## Refinamiento iterativo de la solución
 
-1. Al resolver numéricamente un sistema lineal de ecuaciones $\mathbf{Ax} = \mathbf{b}$, se obtiene una solución aproximada $\mathbf{x} + \delta\mathbf{x}$. Explique paso a paso cómo funciona el procedimiento de refinamiento iterativo: cómo se calcula el residuo, cómo se obtiene una aproximación del error y cómo se utiliza esta aproximación para mejorar la solución.
+1. Al resolver numéricamente un sistema lineal de ecuaciones $\boldsymbol{Ax} = \boldsymbol{b}$, se obtiene una solución aproximada $\boldsymbol{x} + \delta\boldsymbol{x}$. Explique paso a paso cómo funciona el procedimiento de refinamiento iterativo: cómo se calcula el residuo, cómo se obtiene una aproximación del error y cómo se utiliza esta aproximación para mejorar la solución.
 
 
 ## Costo computacional
@@ -277,7 +277,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 1. ¿Por qué es ineficiente utilizar métodos generales de álgebra lineal para resolver sistemas con matrices dispersas?
 
 
-1. Con respecto a los sistemas de ecuaciones $\mathbf{Ax}=\mathbf{b}$ con matrices $\mathbf{A}$ ralas:
+1. Con respecto a los sistemas de ecuaciones $\boldsymbol{Ax}=\boldsymbol{b}$ con matrices $\boldsymbol{A}$ ralas:
     - ¿En qué consisten los métodos directos? ¿Cuándo se usan? ¿Cuáles son sus ventajas?
     - ¿En qué consisten los métodos iterativos? ¿Cuándo se usan? ¿Cuáles son sus ventajas?
 
@@ -291,7 +291,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
     - ¿Cuáles son las ventajas de su uso?
     - ¿Qué tipo de técnicas existen para su solución?
 
-1. Con respecto a los sistemas de ecuaciones Ax=b con matrices A ralas:
+1. Con respecto a los sistemas de ecuaciones $\boldsymbol{Ax}=\boldsymbol{b}$ con matrices $\boldsymbol{A}$ ralas:
     - ¿En qué consisten los métodos directos? ¿Cuándo se usan? ¿Cuáles son sus ventajas?
     - ¿En qué consisten los métodos iterativos? ¿Cuándo se usan? ¿Cuáles son sus ventajas?
 
@@ -316,7 +316,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 1. ¿Qué son las matrices precondicionadoras?
 
-1. Con respecto a los solucionadores directos e iterativos del sistema lineal de ecuaciones $\mathbf{Ax}=\mathbf{b}$ explique:
+1. Con respecto a los solucionadores directos e iterativos del sistema lineal de ecuaciones $\boldsymbol{Ax}=\boldsymbol{b}$ explique:
     - Principios
     - Ventajas
     - Desventajas
@@ -335,18 +335,18 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
     - `scipy.linalg.norm()`. ¿Qué significa el parámetro `ord`?
     - `scipy.linalg.cond()`. ¿Qué significa el parámetro `p`?
 
-1. Haga un ejemplo de cómo usar `scipy.linalg.solve()` para resolver un sistema de ecuaciones lineales. Incluya la definición de la matriz $\mathbf{A}$ y el vector $\mathbf{b}$, y muestre cómo se obtiene la solución $\mathbf{x}$.
+1. Haga un ejemplo de cómo usar `scipy.linalg.solve()` para resolver un sistema de ecuaciones lineales. Incluya la definición de la matriz $\boldsymbol{A}$ y el vector $\boldsymbol{b}$, y muestre cómo se obtiene la solución $\boldsymbol{x}$.
 
-1. Haga un ejemplo de cómo usar `scipy.linalg.inv()` para calcular la inversa de una matriz. Incluya la definición de la matriz $\mathbf{A}$ y muestre cómo se obtiene la inversa $\mathbf{A}^{-1}$.
+1. Haga un ejemplo de cómo usar `scipy.linalg.inv()` para calcular la inversa de una matriz. Incluya la definición de la matriz $\boldsymbol{A}$ y muestre cómo se obtiene la inversa $\boldsymbol{A}^{-1}$.
 
-1. Haga un ejemplo de cómo usar `scipy.linalg.det()` para calcular el determinante de una matriz. Incluya la definición de la matriz $\mathbf{A}$ y muestre cómo se obtiene el determinante $\det(\mathbf{A})$.
+1. Haga un ejemplo de cómo usar `scipy.linalg.det()` para calcular el determinante de una matriz. Incluya la definición de la matriz $\boldsymbol{A}$ y muestre cómo se obtiene el determinante $\det(\boldsymbol{A})$.
 
-1. Haga un ejemplo de cómo usar `scipy.linalg.lu_factor()` y `scipy.linalg.lu_solve()` para resolver un sistema de ecuaciones lineales. Incluya la definición de la matriz $\mathbf{A}$ y el vector $\mathbf{b}$, y muestre cómo se obtiene la solución $\mathbf{x}$.
+1. Haga un ejemplo de cómo usar `scipy.linalg.lu_factor()` y `scipy.linalg.lu_solve()` para resolver un sistema de ecuaciones lineales. Incluya la definición de la matriz $\boldsymbol{A}$ y el vector $\boldsymbol{b}$, y muestre cómo se obtiene la solución $\boldsymbol{x}$.
 
-1. Haga un ejemplo de cómo usar `scipy.linalg.cho_factor()` y `scipy.linalg.cho_solve()` para resolver un sistema de ecuaciones lineales. Incluya la definición de la matriz $\mathbf{A}$ y el vector $\mathbf{b}$, y muestre cómo se obtiene la solución $\mathbf{x}$.
+1. Haga un ejemplo de cómo usar `scipy.linalg.cho_factor()` y `scipy.linalg.cho_solve()` para resolver un sistema de ecuaciones lineales. Incluya la definición de la matriz $\boldsymbol{A}$ y el vector $\boldsymbol{b}$, y muestre cómo se obtiene la solución $\boldsymbol{x}$.
 
-1. Haga un ejemplo de cómo usar `scipy.linalg.norm()` para calcular la norma de un vector y de una matriz. Incluya la definición del vector $\mathbf{x}$ y la matriz $\mathbf{A}$, y muestre cómo se obtiene la norma $\|\mathbf{x}\|$ y $\|\mathbf{A}\|$.
+1. Haga un ejemplo de cómo usar `scipy.linalg.norm()` para calcular la norma de un vector y de una matriz. Incluya la definición del vector $\boldsymbol{x}$ y la matriz $\boldsymbol{A}$, y muestre cómo se obtiene la norma $\|\boldsymbol{x}\|$ y $\|\boldsymbol{A}\|$.
 
-1. Haga un ejemplo de cómo usar `scipy.linalg.cond()` para calcular el número de condición de una matriz. Incluya la definición de la matriz $\mathbf{A}$, y muestre cómo se obtiene el número de condición $\kappa(\mathbf{A})$.
+1. Haga un ejemplo de cómo usar `scipy.linalg.cond()` para calcular el número de condición de una matriz. Incluya la definición de la matriz $\boldsymbol{A}$, y muestre cómo se obtiene el número de condición $\kappa(\boldsymbol{A})$.
 
-1. Como se implementa el refinamiento iterativo de la solución de un sistema lineal en Python. Incluya un ejemplo con una matriz $\mathbf{A}$ y un vector $\mathbf{b}$, y muestre cómo se mejora la solución aproximada $\mathbf{x}$ mediante el refinamiento iterativo.
+1. Como se implementa el refinamiento iterativo de la solución de un sistema lineal en Python. Incluya un ejemplo con una matriz $\boldsymbol{A}$ y un vector $\boldsymbol{b}$, y muestre cómo se mejora la solución aproximada $\boldsymbol{x}$ mediante el refinamiento iterativo.
