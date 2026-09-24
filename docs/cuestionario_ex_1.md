@@ -2,6 +2,8 @@
 
 NOTA: Este cuestionario es un resumen de los temas que se abordarán en el examen 1. Algunas de las preguntas formuladas en este cuestionario no se estudiaron en clase, por lo que se recomienda investigar y estudiar por cuenta propia dichos temas.
 
+Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for Engineers (8th ed.). McGraw-Hill.
+
 ## Métodos de Solución y Clasificación de Errores en Ingeniería
 
 1. Compare entre sí los métodos analíticos, gráficos y numéricos para la solución de problemas en ingeniería. ¿Cuáles son las ventajas y desventajas de cada uno?
