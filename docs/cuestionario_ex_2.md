@@ -32,14 +32,14 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Regla de Cramer y determinantes
 
-1. Explique la regla de Cramer. ¿Qué condición debe cumplirse para que un sistema tenga una solución única según la regla de Cramer? ¿Por qué la regla de Cramer se vuelve computacionalmente ineficiente a medida que aumenta el número de ecuaciones?
+12. Explique la regla de Cramer. ¿Qué condición debe cumplirse para que un sistema tenga una solución única según la regla de Cramer? ¿Por qué la regla de Cramer se vuelve computacionalmente ineficiente a medida que aumenta el número de ecuaciones?
 
 1. ¿Cómo se calcula el determinante de una matriz? 
 
 
 ## Sistemas de ecuaciones bien condicionados, mal condicionados y singulares
 
-1. ¿Qué es un sistema lineal de ecuaciones bien condicionado, mal condicionado y uno singular? En qué se diferencian?
+14. ¿Qué es un sistema lineal de ecuaciones bien condicionado, mal condicionado y uno singular? En qué se diferencian?
 
 1. ¿Cómo se relaciona el determinante de una matriz con la existencia de una solución única?
 
@@ -52,7 +52,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Eliminación de Gauss
 
-1. ¿En qué consiste el método de eliminación de Gauss?
+19. ¿En qué consiste el método de eliminación de Gauss?
 
 1. ¿Cuál es el objetivo principal de la eliminación de Gauss al resolver un sistema lineal?
 
@@ -85,7 +85,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Eliminación de Gauss-Jordan
 
-1. ¿En qué consiste el método de eliminación de Gauss-Jordan?
+34. ¿En qué consiste el método de eliminación de Gauss-Jordan?
 
 1. ¿Cuál es la principal diferencia entre la eliminación de Gauss y la eliminación de Gauss-Jordan?
 
@@ -114,14 +114,14 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Matrices de permutación
 
-1. ¿Qué es una matriz de permutación? ¿Qué propiedades tiene? ¿Qué pasa cuando se premultiplica/postmultiplica con una matriz de permutación?
+46. ¿Qué es una matriz de permutación? ¿Qué propiedades tiene? ¿Qué pasa cuando se premultiplica/postmultiplica con una matriz de permutación?
 
 1. ¿Cuál es el determinante de una matriz de permutación? ¿Por qué?
 
 
 ## Descomposición LU
 
-1. ¿Qué es la descomposición LU $\boldsymbol{A}=\boldsymbol{LU}$ de una matriz? ¿Cómo son las matrices $\boldsymbol{L}$ y $\boldsymbol{U}$? 
+48. ¿Qué es la descomposición LU $\boldsymbol{A}=\boldsymbol{LU}$ de una matriz? ¿Cómo son las matrices $\boldsymbol{L}$ y $\boldsymbol{U}$? 
 
 1. Describa la descomposición LU de Doolittle.
 
@@ -164,7 +164,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Descomposición de Cholesky
 
-1. ¿Qué es la descomposición de Cholesky $\boldsymbol{A}=\boldsymbol{LL}^T$? ¿A qué tipo de matrices se aplica? ¿Cuándo es especialmente útil la descomposición de Cholesky?
+68. ¿Qué es la descomposición de Cholesky $\boldsymbol{A}=\boldsymbol{LL}^T$? ¿A qué tipo de matrices se aplica? ¿Cuándo es especialmente útil la descomposición de Cholesky?
 
 1. ¿Qué pasos implica resolver un sistema de ecuaciones usando la descomposición de Cholesky?
     
@@ -183,7 +183,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Gauss-Seidel y Métodos Iterativos
 
-1. ¿En qué consiste el método iterativo de Gauss-Seidel? ¿El de Jacobi? ¿Cuáles son sus diferencias?
+76. ¿En qué consiste el método iterativo de Gauss-Seidel? ¿El de Jacobi? ¿Cuáles son sus diferencias?
 
 1. ¿Cuál es la diferencia entre un método directo y un método iterativo para resolver sistemas lineales?
 
@@ -195,7 +195,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 
 ## Matrices bandeadas
-1. ¿Qué es una matriz bandeada? ¿Qué ventajas tiene su uso?
+81. ¿Qué es una matriz bandeada? ¿Qué ventajas tiene su uso?
 
 1. ¿Qué es ancho de banda y cómo se calcula? ¿Qué mide el ancho de banda de una matriz?
 
@@ -204,7 +204,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 1. ¿Qué ventajas de almacenamiento y tiempo computacional pueden obtenerse utilizando algoritmos especializados para matrices bandeadas?
 
 ## Normas
-1. ¿Qué es un espacio vectorial?
+85. ¿Qué es un espacio vectorial?
 
 1. ¿Qué es una norma de un vector en un espacio vectorial?
 
@@ -228,7 +228,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Números de condición y sistemas mal condicionados
 
-1. ¿Qué es el número de condición de una matriz y cómo se calcula? ¿Qué significa un número de condición grande o pequeño?
+95. ¿Qué es el número de condición de una matriz y cómo se calcula? ¿Qué significa un número de condición grande o pequeño?
 
 1. ¿Qué problemas pueden surgir al trabajar con sistemas lineales mal condicionados?
 
@@ -253,12 +253,12 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 ## Refinamiento iterativo de la solución
 
-1. Al resolver numéricamente un sistema lineal de ecuaciones $\boldsymbol{Ax} = \boldsymbol{b}$, se obtiene una solución aproximada $\boldsymbol{x} + \delta\boldsymbol{x}$. Explique paso a paso cómo funciona el procedimiento de refinamiento iterativo: cómo se calcula el residuo, cómo se obtiene una aproximación del error y cómo se utiliza esta aproximación para mejorar la solución.
+106. Al resolver numéricamente un sistema lineal de ecuaciones $\boldsymbol{Ax} = \boldsymbol{b}$, se obtiene una solución aproximada $\boldsymbol{x} + \delta\boldsymbol{x}$. Explique paso a paso cómo funciona el procedimiento de refinamiento iterativo: cómo se calcula el residuo, cómo se obtiene una aproximación del error y cómo se utiliza esta aproximación para mejorar la solución.
 
 
 ## Costo computacional
 
-1. Qué es un FLOP?
+107. Qué es un FLOP?
 
 1. Cuál es el costo computacional de:
     - Eliminación hacia adelante en la eliminación de Gauss con pivoteo parcial.
@@ -272,7 +272,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 
 ## Matrices ralas o dispersas (sparse matrices)
-1. ¿Qué es una matriz rala o dispersa? ¿Cuáles son las ventajas de su uso? ¿Qué tipo de técnicas existen para su solución?
+109. ¿Qué es una matriz rala o dispersa? ¿Cuáles son las ventajas de su uso? ¿Qué tipo de técnicas existen para su solución?
 
 1. ¿Por qué es ineficiente utilizar métodos generales de álgebra lineal para resolver sistemas con matrices dispersas?
 
@@ -285,7 +285,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 
 ## Aplicación a la ingeniería civil - método de los elementos finitos
-1. Explica el concepto de una matriz banda. Como se puede modificar la eliminación gausiana para que funcione eficientemente en este tipo de matrices.
+113. Explica el concepto de una matriz banda. Como se puede modificar la eliminación gausiana para que funcione eficientemente en este tipo de matrices.
    
 1. ¿Qué es una matriz rala? 
     - ¿Cuáles son las ventajas de su uso?
@@ -324,7 +324,7 @@ Libro recomendado: Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for E
 
 
 ## Python
-1. Explique como funcionan las siguientes funciones:
+122. Explique como funcionan las siguientes funciones:
     - `scipy.linalg.solve()`. ¿Para que sirve su parámetro `assume_a`?
     - `scipy.linalg.inv()`.
     - `scipy.linalg.det()`.
