@@ -80,9 +80,16 @@ Estudie cuidadosamente los siguientes códigos de Python:
 
 ## Interpolación con splines cúbicos
 
-1. Deduzca rigurosamente su formulación matemática. 
-1. Describa y explique matemáticamente las condiciones de frontera: natural (`natural`), empotrada (`clamped`), sin nudo (`not-a-knot`) y periodica (`periodic`). (vale por 10 preguntas del examen)
+1. Deduzca rigurosamente su formulación matemática. (vale por 6 preguntas del examen)
+1. Describa y explique matemáticamente las condiciones de frontera: natural (`natural`), empotrada (`clamped`), sin nudo (`not-a-knot`) y periodica (`periodic`). (vale por 6 preguntas del examen)
 1. Como se emplean los splines cúbicos para interpolar curvas cerradas? (vale por 3 preguntas del examen)
+
+## Implementación de splines cúbicos con Python
+
+Estudie cuidadosamente los siguientes códigos de Python:
+
+1. [cubic_spline_interpolation.ipynb](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb) (vale por 10 preguntas del examen)
+
 
 
 <!---
