@@ -1,60 +1,98 @@
 # Cuestionario para el examen 3 de métodos numéricos aplicados a la ingeniería civil
 
-### 1. Programming questions
+NOTA: Este cuestionario es un resumen de los temas que se abordarán en el examen 3. Algunas de las preguntas formuladas en este cuestionario no se estudiaron en clase, por lo que se recomienda investigar y estudiar por cuenta propia dichos temas.
 
-You will be asked several questions related to computer programming, including topics in **Python**, **NumPy**, and **SciPy**. Carefully review and understand all codes discussed during the course.
+Libros recomendados:
+* Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for Engineers (8th ed.). McGraw-Hill.
+* Burden, R. L., Faires, J. D., & Burden, A. M. (2011). *[Numerical analysis](https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)* (9th ed.). Cengage Learning.
+* Burden, R. L., Faires, J. D., & Burden, A. M. (2016). *[Numerical analysis](http://ir.harambeeuniversity.edu.et/handle/123456789/1576)* (10th ed.). Cengage Learning.
 
----
 
-### 2. Function continuity classification
 
-* Describe the classification of functions according to their continuity: $C^0$, $C^1$, $C^2$, $C^k$, $C^\infty$, etc.
-* Why is continuity of derivatives important in interpolation for engineering applications?
-* Give examples of methods that ensure $C^0$, $C^1$, and $C^2$, etc, continuity.
+## Continuidad de funciones
 
----
+1. Describa la clasificación de funciones según su continuidad: $C^0$, $C^1$, $C^2$, $C^k$, $C^\infty$, etc.
+1. ¿Por qué es importante la continuidad de las derivadas en la interpolación para aplicaciones de ingeniería?
+1. Dé ejemplos de funciones que aseguren continuidad $C^0$, $C^1$, y $C^2$, etc.
 
-### 3. Interpolation basics
 
-* Define interpolation.
-* What are the desirable properties of an interpolation method?
 
----
+## Polinomios
 
-### 4. Interpolation method selection
+1. ¿En qué consiste el método de Horner para evaluar polinomios? ¿Por qué es eficiente?
 
-What are the main criteria for choosing one interpolation method over another?
 
----
 
-### 5. Interpolation methods
+## Polinomios con Python
 
-For each of the following interpolation techniques, explain:
+Estudie cuidadosamente los siguientes códigos de Python:
 
-* Advantages
-* Disadvantages
-* Selection criteria
-* Continuity class
-* Python implementation (API or usage)
-* Mathematical derivation (if covered in class)
+1. [Poly1D_numpy](../codigo/03_interpolacion/Poly1D_numpy.ipynb) (vale por 10 preguntas del examen)
 
+
+
+## Interpolación
+
+1. Como se define matemáticamente la interpolación?
+1. ¿Cuáles son las propiedades deseables de un método de interpolación?
+1. ¿Cuáles son los criterios principales para elegir un método de interpolación sobre otro?
+
+
+
+## Interpolación univariada
+
+1. ¿Cuáles son las ventajas y desventajas de la interpolación univariada?
+1. ¿Cuáles son los criterios principales para elegir un método de interpolación univariada sobre otro?
+
+
+
+## Métodos de interpolación univariada
+
+Con respecto a los siguientes métodos de interpolación univariada, explique: (a) ventajas, (b) desventajas, (c) criterios de selección, (d) clase de continuidad, (e) implementación en Python (API o uso), y (f) derivación matemática (si se abordó en clase):
+
+1. Interpolación de vecinos más cercanos
+1. Interpolación lineal
+1. Interpolación polinomial
+1. Interpolación con splines cúbicos
+1. Interpolación con splines cúbicos de Hermite 
+1. Interpolación con PCHIP
+1. Interpolación de Akima
+1. Interpolación de Makima
+
+
+
+## Interpolación polinomial
+
+1. ¿En qué casos se justifica calcular los coeficientes de un polinomio interpolante de grado $n$?
+1. ¿Qué es el fenómeno de Runge? ¿Por qué es importante en la interpolación polinomial?
+1. ¿Qué son los nodos de Chebyshev? ¿Por qué son importantes en la interpolación polinomial?
+1. ¿Qué es la interpolación de Lagrange? ¿Cómo se implementa en Python?
+1. ¿Qué es la interpolación de Hermite? ¿Cómo se implementa en Python?
+
+
+
+## Interpolación polinomial con Python
+
+Estudie cuidadosamente los siguientes códigos de Python:
+1. [1D_polynomial_interpolation.ipynb](../codigo/03_interpolacion/1D_polynomial_interpolation.ipynb) (vale por 10 preguntas del examen)
+
+
+
+## Interpolación con splines cúbicos
+
+1. Deduzca rigurosamente su formulación matemática. 
+1. Describa y explique matemáticamente las condiciones de frontera: natural (`natural`), empotrada (`clamped`), sin nudo (`not-a-knot`) y periodica (`periodic`). (vale por 10 preguntas del examen)
+1. Como se emplean los splines cúbicos para interpolar curvas cerradas? (vale por 3 preguntas del examen)
+
+
+<!---
 **Interpolation Methods:**
-
-* Univariate interpolation:
-  * Nearest neighbors
-  * Linear interpolation
   * Polynomial interpolation:
-    * Lagrange polynomials
-    * Hermite polynomials
-    * Solving a linear system with Vandermonde matrices
+     * Solving a linear system with Vandermonde matrices
     * Krogh’s method (1970)
     * Barycentric interpolation (Berrut & Trefethen, 2004)
-  * Piecewise interpolation with splines:
-    * Quadratic, cubic, and quintic splines
-    * Cubic Hermite splines
-  * PCHIP (Piecewise Cubic Hermite Interpolating Polynomial)
-  * Akima interpolation
-  * Makima interpolation
+
+---
 
 * Multivariate interpolation on structured grids:
   * Nearest neighbors
@@ -68,12 +106,6 @@ For each of the following interpolation techniques, explain:
 
 ---
 
-### 6. Challenges of polynomial interpolation
-
-Explain the difficulties and limitations associated with polynomial interpolation.
-
----
-
 ### 7. Runge's phenomenon
 
 * Describe Runge’s phenomenon and its implications for polynomial interpolation.
@@ -82,25 +114,12 @@ Explain the difficulties and limitations associated with polynomial interpolatio
 
 ---
 
-### 8. Cubic splines
-
-* Derive the formulation of cubic spline interpolation.
-* In which contexts are cubic splines typically used?
-* Homework: Explain and derive the formulation for the following boundary conditions:
-  * Natural
-  * Clamped
-  * Not-a-knot
-  * Periodic
-
-* How can periodic splines be used to interpolate closed curves?
-
----
-
 ### 9. Additional concepts
 * What is Occam's razor about? How do you apply it in the context of optimization?
 * Homework: Describe the properties of Vandermonde matrices.
-* Explain Horner’s method for efficient polynomial evaluation. Why is this method computationally efficient?
 * Explain Voronoi tessellations. What are their main properties?
 * Explain Delaunay's triangulations. What are their main properties?
 * Explain Occam's razor. How is it used for selecting an interpolation algorithm?
 * Explain feature scaling. Motivation, methods, advantages, etc.
+
+--->
