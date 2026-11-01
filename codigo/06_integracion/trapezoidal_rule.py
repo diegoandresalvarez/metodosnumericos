@@ -19,12 +19,19 @@ a = roots[0]
 b = roots[-1]
 print(f"df(a) = {df(a):.8f}, df(b) = {df(b):.8f}")
 
+# Let's integrate a peaked function with vanishing tails
+from scipy.stats import norm
+f = norm.pdf
+F = norm.cdf
+a = -5
+b = 5
+
 # Let's compute the exact integral of f(x) from a to b
 exact_integral = float(F(b) - F(a))
 print(f"Exact integral: {exact_integral:.8f}")
 
 # Now we will apply the trapezoidal rule
-print("n       Integral      trapezoid()   abs_error    rel_error(%)")
+print("n        Integral      trapezoid()  abs_error     rel_error(%)")
 for n in [1, 2, 4, 8, 16, 32, 64, 10000]:
     dx = (b - a)/n
     x = np.linspace(a, b, n + 1)
@@ -37,7 +44,7 @@ for n in [1, 2, 4, 8, 16, 32, 64, 10000]:
           f"{integral: 10.8f}   "
           f"{trapz: 10.8f}   "
           f"{abs_error:10.8f}   "
-          f"{rel_error:11.8f}")
+          f"{rel_error:12.8f}")
 
 # Now we will plot the function and the integration interval
 x = np.linspace(a - 0.3*(b - a), b + 0.3*(b - a), 500)
