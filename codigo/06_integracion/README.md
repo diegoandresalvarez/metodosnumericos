@@ -2,8 +2,8 @@
 
 ## Integración con Newton-Cotes: deducción de fórmulas
 
-* [simpson_1_3.py](simpson_1_3.py) deduce simbólicamente (SymPy) la regla de Simpson 1/3 integrando el polinomio interpolante de 3 puntos.
-* [simpson_3_8.py](simpson_3_8.py) deduce simbólicamente (SymPy) la regla de Simpson 3/8 integrando el polinomio interpolante de 4 puntos.
+* [demo_simpson_1_3_rule.py](demo_simpson_1_3_rule.py) deduce simbólicamente (SymPy) la regla de Simpson 1/3 integrando el polinomio interpolante de 3 puntos.
+* [demo_simpson_3_8_rule.py](demo_simpson_3_8_rule.py) deduce simbólicamente (SymPy) la regla de Simpson 3/8 integrando el polinomio interpolante de 4 puntos.
 * [newton_cotes_MAXIMA.max](newton_cotes_MAXIMA.max) deduce con Maxima las fórmulas de Newton-Cotes (p. ej. Simpson 3/8) a partir del polinomio de Lagrange.
 * [formulas_Newton_Cotes.m](formulas_Newton_Cotes.m) deduce las fórmulas de Newton-Cotes en MATLAB/Octave.
 * [newton_cotes_weights_error.py](newton_cotes_weights_error.py) muestra los pesos y el término de error de Newton-Cotes para 1 a 6 intervalos usando SciPy.
