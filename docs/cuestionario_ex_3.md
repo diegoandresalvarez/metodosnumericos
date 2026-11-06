@@ -26,7 +26,6 @@ Libros recomendados:
 ## Polinomios con Python
 
 Estudie cuidadosamente los siguientes códigos de Python:
-
 1. [Poly1D_numpy](../codigo/03_interpolacion/Poly1D_numpy.ipynb) (vale por 10 preguntas del examen)
 
 
@@ -66,6 +65,8 @@ Con respecto a los siguientes métodos de interpolación univariada, explique: (
 1. ¿En qué casos se justifica calcular los coeficientes de un polinomio interpolante de grado $n$?
 1. ¿Qué es el fenómeno de Runge? ¿Por qué es importante en la interpolación polinomial?
 1. ¿Qué son los nodos de Chebyshev? ¿Por qué son importantes en la interpolación polinomial?
+1. Compare el uso de nodos equiespaciados vs nodos de Chebyshev en la interpolación polinomial.
+1. ¿Por qué se usan los nodos de Chebyshev en la interpolación polinomial de alto grado?
 1. ¿Qué es la interpolación de Lagrange? ¿Cómo se implementa en Python?
 1. ¿Qué es la interpolación de Hermite? ¿Cómo se implementa en Python?
 
@@ -84,6 +85,8 @@ Estudie cuidadosamente los siguientes códigos de Python:
 1. Describa y explique matemáticamente las condiciones de frontera: natural (`natural`), empotrada (`clamped`), sin nudo (`not-a-knot`) y periodica (`periodic`). (vale por 6 preguntas del examen)
 1. Como se emplean los splines cúbicos para interpolar curvas cerradas? (vale por 3 preguntas del examen)
 
+
+
 ## Implementación de splines cúbicos con Python
 
 Estudie cuidadosamente los siguientes códigos de Python:
@@ -92,15 +95,16 @@ Estudie cuidadosamente los siguientes códigos de Python:
 
 
 
+## Interpolación multivariada
+POR FORMULAR
+
 <!---
 **Interpolation Methods:**
   * Polynomial interpolation:
      * Solving a linear system with Vandermonde matrices
     * Krogh’s method (1970)
     * Barycentric interpolation (Berrut & Trefethen, 2004)
-
 ---
-
 * Multivariate interpolation on structured grids:
   * Nearest neighbors
   * Linear interpolation (bilinear, trilinear)
@@ -110,17 +114,7 @@ Estudie cuidadosamente los siguientes códigos de Python:
   * Nearest neighbors
   * Linear interpolation
   * RBFs
-
 ---
-
-### 7. Runge's phenomenon
-
-* Describe Runge’s phenomenon and its implications for polynomial interpolation.
-* Homework: Compare the use of equally spaced nodes vs Chebyshev nodes.
-* Homework: Why are Chebyshev nodes preferred in high-degree polynomial interpolation?
-
----
-
 ### 9. Additional concepts
 * What is Occam's razor about? How do you apply it in the context of optimization?
 * Homework: Describe the properties of Vandermonde matrices.
@@ -128,5 +122,18 @@ Estudie cuidadosamente los siguientes códigos de Python:
 * Explain Delaunay's triangulations. What are their main properties?
 * Explain Occam's razor. How is it used for selecting an interpolation algorithm?
 * Explain feature scaling. Motivation, methods, advantages, etc.
-
 --->
+
+
+## Integración numérica con el métodos de los trapecios
+POR FORMULAR
+
+## Integración numérica con los métodos de Simpson 1/3 y 3/8
+POR FORMULAR
+
+## Integración numérica con el método de Newton-Cotes
+POR FORMULAR
+
+## Extrapolaciones de Richardson y el método de integración de Romberg
+POR FORMULAR
+
