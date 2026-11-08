@@ -4,6 +4,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+f = lambda x :  np.sin(x)
+F = lambda x : -np.cos(x)
+a = 0
+b = np.pi
+
+'''
 f  = np.poly1d([ 400, -900, 675, -200, 25, 0.2])
 F  = np.polyint(f)
 #a  = 0
@@ -25,6 +31,7 @@ f = norm.pdf
 F = norm.cdf
 a = -5
 b = 5
+'''
 
 # Let's compute the exact integral of f(x) from a to b
 exact_integral = float(F(b) - F(a))
