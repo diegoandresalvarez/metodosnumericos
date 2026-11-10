@@ -55,34 +55,9 @@ Fuente: <https://xkcd.com/135/>
     - Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for Engineers (8th ed.). McGraw-Hill.
     - Burden, R. L., Faires, J. D., & Burden, A. M. (2011). *[Numerical analysis](https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)* (9th ed.). Cengage Learning.
     - Burden, R. L., Faires, J. D., & Burden, A. M. (2016). *[Numerical analysis](http://ir.harambeeuniversity.edu.et/handle/123456789/1576)* (10th ed.). Cengage Learning.
-* Cuadernos de Jupyter:
-    - [Polynomials with NumPy (using the Poly1D class)](../codigo/03_interpolacion/Poly1D_numpy.ipynb)
-    - [Lagrange interpolating polynomial](../codigo/03_interpolacion/1D_polynomial_interpolation.ipynb)
-    - [Interpolation in 1D with SciPy](../codigo/03_interpolacion/interpolation_1D.ipynb)
-    - [Cubic spline interpolation](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb)
-    - [Comparison of integration methods](../codigo/06_integracion/Comparison_of_integration_methods.ipynb)
-    - [Integration with SciPy (`quad`)](../codigo/06_integracion/Integration_with_SciPy_%28quad%29.ipynb)
-<!---
-    - [Polynomial class with NumPy](../codigo/03_interpolacion/Polynomial_class_numpy.ipynb)
-    - [Hermite interpolating polynomial](../codigo/03_interpolacion/Hermite_interpolation.ipynb)
-    - [Interpolation with Vandermonde matrices](../codigo/03_interpolacion/interpolation_vandermonde.ipynb)
-    - [Multivariate interpolation on structured grids](../codigo/03_interpolacion/multivariate_structured_grid_interpolation.ipynb)        
-    - [Multivariate interpolation on scattered data](../codigo/03_interpolacion/multivariate_scattered_data_interpolation.ipynb)
---->    
-* Programas de Python:
-    - [03_interpolation.py](../codigo/03_interpolacion/03_interpolation.py)
-    - [03_spline_interpolation.py](../codigo/03_interpolacion/03_spline_interpolation.py)
-    - [integrating_with_polyint.py](../codigo/06_integracion/integrating_with_polyint.py)
-    - [trapezoidal_rule.py](../codigo/06_integracion/trapezoidal_rule.py)
-    - [newton_cotes_example.py](../codigo/06_integracion/newton_cotes_example.py)
-    - [newton_cotes_weights_error.py](../codigo/06_integracion/newton_cotes_weights_error.py)
-    - [demo_simpson_1_3_rule.py](../codigo/06_integracion/demo_simpson_1_3_rule.py)
-    - [demo_simpson_3_8_rule.py](../codigo/06_integracion/demo_simpson_3_8_rule.py)
-    - [romberg_integration.py](../codigo/06_integracion/romberg_integration.py)
-    - [GL_n_2.py](../codigo/06_integracion/GL_n_2.py)
-    - [GL_n_3.py](../codigo/06_integracion/GL_n_3.py)
-    - [example_GL_quad.py](../codigo/06_integracion/example_GL_quad.py)
-    - [improper_int.py](../codigo/06_integracion/improper_int.py)
+* Cuadernos de Jupyter y programas de Python de las carpetas:
+    - [Interpolación](../codigo/03_interpolacion/)
+    - [Integración](../codigo/06_integracion/)    
 * Páginas de WIKIPEDIA
     - [Interpolation](https://en.wikipedia.org/wiki/Interpolation)
     - [Nearest-neighbor interpolation](https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
