@@ -41,6 +41,14 @@ Fuente: <https://xkcd.com/135/>
     - [Solución del sistema K*a - f = q en elementos finitos](https://github.com/diegoandresalvarez/elementosfinitos/blob/master/diapositivas/01_Repaso_Calculo_Matricial.pdf)
     - [Estado del arte en solucionadores de sistemas de ecuaciones Ax=b para el método de elementos finitos: directos vs. iterativos](https://github.com/diegoandresalvarez/metodosnumericos/blob/master/codigo/02_sistemas_ecuaciones_lineales/solvers_Ax_b.pdf)
 
+<!---
+*** http://en.wikipedia.org/wiki/Reduced_row_echelon_form
+*** http://es.wikipedia.org/wiki/Forma_de_filas_en_escalon (ver además comando rref de MATLAB)
+*** http://en.wikipedia.org/wiki/Row_echelon_form
+*** http://en.wikipedia.org/wiki/Conjugate_gradient_method
+** Comandos de MATLAB: \, linsolve, lu, chol, rref, rank, inv, eye, sparse, full, spy
+--->
+
 ## Examen 3
 * [Cuestionario](cuestionario_ex_3.md)
 * Libros recomendados:
@@ -49,18 +57,32 @@ Fuente: <https://xkcd.com/135/>
     - Burden, R. L., Faires, J. D., & Burden, A. M. (2016). *[Numerical analysis](http://ir.harambeeuniversity.edu.et/handle/123456789/1576)* (10th ed.). Cengage Learning.
 * Cuadernos de Jupyter:
     - [Polynomials with NumPy (using the Poly1D class)](../codigo/03_interpolacion/Poly1D_numpy.ipynb)
-    - [Lagrange interpolating polynomial](../codigo/03_interpolacion/Lagrange_interpolation.ipynb)
+    - [Lagrange interpolating polynomial](../codigo/03_interpolacion/1D_polynomial_interpolation.ipynb)
     - [Interpolation in 1D with SciPy](../codigo/03_interpolacion/interpolation_1D.ipynb)
     - [Cubic spline interpolation](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb)
+    - [Comparison of integration methods](../codigo/06_integracion/Comparison_of_integration_methods.ipynb)
+    - [Integration with SciPy (`quad`)](../codigo/06_integracion/Integration_with_SciPy_%28quad%29.ipynb)
 <!---
-    - [ESTE NO Hermite interpolating polynomial](../codigo/03_interpolacion/Hermite_interpolation.ipynb)
-    - [ESTE NO Interpolation using Vandermonde matrices](../codigo/03_interpolacion/interpolation_vandermonde.ipynb)
-    - [ESTE NO Multivariate interpolation on structured grids](../codigo/03_interpolacion/multivariate_structured_grid_interpolation.ipynb)
-    - [ESTE NO Multivariate interpolation on scattered data](../codigo/03_interpolacion/multivariate_scattered_data_interpolation.ipynb)
+    - [Polynomial class with NumPy](../codigo/03_interpolacion/Polynomial_class_numpy.ipynb)
+    - [Hermite interpolating polynomial](../codigo/03_interpolacion/Hermite_interpolation.ipynb)
+    - [Interpolation with Vandermonde matrices](../codigo/03_interpolacion/interpolation_vandermonde.ipynb)
+    - [Multivariate interpolation on structured grids](../codigo/03_interpolacion/multivariate_structured_grid_interpolation.ipynb)        
+    - [Multivariate interpolation on scattered data](../codigo/03_interpolacion/multivariate_scattered_data_interpolation.ipynb)
 --->    
 * Programas de Python:
     - [03_interpolation.py](../codigo/03_interpolacion/03_interpolation.py)
     - [03_spline_interpolation.py](../codigo/03_interpolacion/03_spline_interpolation.py)
+    - [integrating_with_polyint.py](../codigo/06_integracion/integrating_with_polyint.py)
+    - [trapezoidal_rule.py](../codigo/06_integracion/trapezoidal_rule.py)
+    - [newton_cotes_example.py](../codigo/06_integracion/newton_cotes_example.py)
+    - [newton_cotes_weights_error.py](../codigo/06_integracion/newton_cotes_weights_error.py)
+    - [demo_simpson_1_3_rule.py](../codigo/06_integracion/demo_simpson_1_3_rule.py)
+    - [demo_simpson_3_8_rule.py](../codigo/06_integracion/demo_simpson_3_8_rule.py)
+    - [romberg_integration.py](../codigo/06_integracion/romberg_integration.py)
+    - [GL_n_2.py](../codigo/06_integracion/GL_n_2.py)
+    - [GL_n_3.py](../codigo/06_integracion/GL_n_3.py)
+    - [example_GL_quad.py](../codigo/06_integracion/example_GL_quad.py)
+    - [improper_int.py](../codigo/06_integracion/improper_int.py)
 * Páginas de WIKIPEDIA
     - [Interpolation](https://en.wikipedia.org/wiki/Interpolation)
     - [Nearest-neighbor interpolation](https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
@@ -70,22 +92,31 @@ Fuente: <https://xkcd.com/135/>
     - [Polynomial interpolation](https://en.wikipedia.org/wiki/Polynomial_interpolation)
     - [Spline interpolation](https://en.wikipedia.org/wiki/Spline_interpolation)
     - [Cubic splines](https://en.wikipedia.org/wiki/Cubic_spline)
-    - [Multivariate interpolation](https://en.wikipedia.org/wiki/Multivariate_interpolation)
+    - [Runge's phenomenon](https://en.wikipedia.org/wiki/Runge%27s_phenomenon)
+    - [Numerical integration](https://en.wikipedia.org/wiki/Numerical_integration)
+    - [Newton–Cotes formulas](https://en.wikipedia.org/wiki/Newton%E2%80%93Cotes_formulas)
+    - [Midpoint rule](https://en.wikipedia.org/wiki/Midpoint_rule)
+    - [Trapezoidal rule](https://en.wikipedia.org/wiki/Trapezoidal_rule)
+    - [Simpson's rule](https://en.wikipedia.org/wiki/Simpson%27s_rule)
+    - [Romberg's method](https://en.wikipedia.org/wiki/Romberg%27s_method)
+    - [Gaussian quadrature](https://en.wikipedia.org/wiki/Gaussian_quadrature)
+    - [Gauss-Legendre quadrature](https://en.wikipedia.org/wiki/Gauss%E2%80%93Legendre_quadrature)
+    - [Improper integral](https://en.wikipedia.org/wiki/Improper_integral)
 <!---    
-    - [ESTA NO Hermite cubic splines](https://en.wikipedia.org/wiki/Hermite_spline)
-    - [ESTA NO Feature scaling](https://en.wikipedia.org/wiki/Feature_scaling)
+    - [Hermite cubic splines](https://en.wikipedia.org/wiki/Hermite_spline)
+    - [Feature scaling](https://en.wikipedia.org/wiki/Feature_scaling)
+    - [Multivariate interpolation](https://en.wikipedia.org/wiki/Multivariate_interpolation)    
+    - [Chebyshev nodes](https://en.wikipedia.org/wiki/Chebyshev_nodes)
+    - [Vandermonde matrix](https://en.wikipedia.org/wiki/Vandermonde_matrix)    
 --->
 
-<!---
-*** http://en.wikipedia.org/wiki/Reduced_row_echelon_form
-*** http://es.wikipedia.org/wiki/Forma_de_filas_en_escalon (ver además comando rref de MATLAB)
-*** http://en.wikipedia.org/wiki/Row_echelon_form
-*** http://en.wikipedia.org/wiki/Conjugate_gradient_method
-** Comandos de MATLAB: \, linsolve, lu, chol, rref, rank, inv, eye, sparse, full, spy
---->
+<code style="color: #ff0000;">Se permite, para el examen 3, traer una hoja tamaño carta en la cual ustedes pueden escribir (POR UN SOLO LADO) todas las fórmulas y comandos de MATLAB/MAXIMA/PYTHON que deseen. En la hoja no se pueden ni escribir programas, ni textos explicativos, ni se pueden escribir demostraciones. Dicha hoja debe ser de elaboración personal (no se pueden traer las hojas hechas por compañeros de este o semestres pasados) y debe hacerse a mano (se prohíbe explícitamente traer fotocopias/impresiones/reducciones).</code>
 
-<!---
+
 ## Examen 4
+POR DEFINIR
+
+<!---
 * Capítulos 13 y 14 Optimización (páginas 350--394) del libro [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). 
 * Capítulo 6 "Derivarive-based optimization" del libro [Jyh-Shing Roger Jang, Chuen-Tsai Sun, Eiji Mizutani (1997). Neuro-Fuzzy and Soft Computing. Prentice Hall](http://www.soukalfi.edu.sk/01_NeuroFuzzyApproach.pdf)
 * [Cuestionario](cuestionario_ex_4.md)
@@ -96,11 +127,6 @@ Fuente: <https://xkcd.com/135/>
 
 --->
 <!--- 
-## Examen 1
-* Métodos para la solución de sistemas lineales (Estudiar notas de clase y complementar con Capítulo 2 del libro de Yang et al. (2009) - Applied numerical methods using MATLAB).
-* Podrán llevar **hojita** de fórmulas debidamente marcada, la cual iré revisando al inicio mientras ustedes arrancan con el examen. Únicamente pueden poner fórmulas puntuales (como por ejemplo la de interpolación de Lagrange), no debe estar escrito ningún tipo de desarrollo, demostración, explicación ó concepto.
-* **NOTA: la pregunta del examen será: escriba todo lo que sabe con respecto al tema _XXX_.**
-
 ## Examen 2
 * Métodos para hallar raíces de ecuaciones no lineales (Estudiar notas de clase y complementar con Capítulo 4 del libro de Yang et al. (2009) - Applied numerical methods using MATLAB).
 * Métodos para minimización de funciones (Estudiar notas de clase y complementar con Capítulo 7 del libro de Yang et al. (2009) - Applied numerical methods using MATLAB).
