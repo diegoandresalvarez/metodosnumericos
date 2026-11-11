@@ -94,9 +94,10 @@ Estudie cuidadosamente los siguientes códigos de Python:
 1. [cubic_spline_interpolation.ipynb](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb) (vale por 10 preguntas del examen)
 
 
-
+<!---
 ## Interpolación multivariada
 POR FORMULAR
+--->
 
 <!---
 **Interpolation Methods:**
@@ -125,6 +126,9 @@ POR FORMULAR
 --->
 ## Integración numérica
 1. Explique la relación entre integración y diferenciación. ¿Cómo se puede interpretar la integral como la solución de un problema de valor inicial?
+<!---
+1. Explique el teorema del valor medio para integrales.
+--->
 
 ## Integración numérica con la regla del punto medio y el método de los trapecios
 1. Deduzca la regla del trapecio simple integrando la recta que une $(a,f(a))$ y $(b,f(b))$, $y=(x-a)\frac{f(b)-f(a)}{b-a}+f(a)$. Muestre todos los pasos hasta llegar a $\frac12(b-a)[f(a)+f(b)]$.
@@ -184,8 +188,9 @@ POR FORMULAR
 1. Con Euler-Maclaurin, explique por qué en la integración de Romberg solo se eliminan potencias pares de $h$ (2, 4, 6, 8, …) y por qué cada columna de la tabla sube el orden de dos en dos.
 1. Justifique desde la matemática porqué con $n=8$ (9 evaluaciones), el método de Romberg es exacto para un polinomio de grado 5: los términos de Euler-Maclaurin eliminados incluyen las derivadas $f'$, $f'''$, $f^{(5)}$ y el siguiente involucra $f^{(7)}=0$.
 1. En la gráfica del número de intervalos cde los errores absolutos de los diferentes métodos de integración, para $n$ intervalos (escala log), ¿qué pendientes asintóticas se observan para punto medio y trapecio, Simpson 1/3 y 3/8, Boole y Newton-Cotes de 6 puntos? Relacione con el orden global $O(h^2)$, $O(h^4)$, $O(h^6)$ y $O(h^8)$.
-72. **(Concepto · Alta)** En esa misma gráfica los errores se estancan alrededor de $10^{-16}$. Explique el papel del error de redondeo, el épsilon de máquina y por qué para $n$ grande no se puede alcanzar el resultado exacto analítico.
+1. En esa misma gráfica los errores se estancan alrededor de $10^{-16}$. Explique el papel del error de redondeo, el épsilon de máquina y por qué para $n$ grande no se puede alcanzar el resultado exacto analítico.
 
+<!---
 ## Integración con Gauss-Legendre
 1. Explique la idea de la cuadratura gaussiana: ¿qué se elige de forma óptima (nodos y pesos) y qué ventaja ofrece frente a Newton-Cotes con puntos equiespaciados? ¿Para qué tipo de integrandos es adecuada?
 1. ¿Por qué una cuadratura de $n$ puntos puede integrar exactamente polinomios hasta grado $2n-1$ ($n$ nodos + $n$ pesos = $2n$ parámetros, frente a los $2n$ coeficientes de un polinomio de grado $2n-1$)?
@@ -195,4 +200,4 @@ POR FORMULAR
 1. Deduzca el cambio de variable $x=\frac{(b-a)\xi+(a+b)}{2}$ y demuestre que $\int_a^b f(x)\,dx=\frac{b-a}{2}\int_{-1}^{1}f\!\left(\frac{(b-a)\xi+a+b}{2}\right)d\xi\approx\frac{b-a}{2}\sum w_if\!\left(\frac{(b-a)\xi_i+a+b}{2}\right)$.
 1. Aplique la cuadratura de Gauss-Legendre con $n=3$ a $\int_0^\pi\sin x\,dx$. Calcule el error relativo.
 1. En la gráfica del error de Gauss-Legendre para el polinomio de grado 5 en $[0,0.8]$, el error es cero a partir de $n=3$. Explique por qué $n=2$ no basta y $n=3$ sí, usando el grado de exactitud $2n-1$.
-
+--->
