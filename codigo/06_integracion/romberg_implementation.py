@@ -18,7 +18,8 @@ def romberg(f, a, b, eps=1e-5, max_iter=20):
         if i > 0 and abs(R[i, i] - R[i-1, i-1]) < eps:
             break
     else:
-        raise RuntimeError(f"Romberg method did not converge within {max_iter} iterations.")
+        raise RuntimeError(f"Romberg method did not converge "
+                           f"within {max_iter} iterations.")
 
     # Print the Romberg table
     print("Romberg Table:")
