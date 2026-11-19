@@ -136,12 +136,10 @@ POR FORMULAR
 --->
 ## Integración numérica
 1. Explique la relación entre integración y diferenciación. ¿Cómo se puede interpretar la integral como la solución de un problema de valor inicial?
-<!---
 1. Explique el teorema del valor medio para integrales.
---->
 
 ## Integración numérica con la regla del punto medio y el método de los trapecios
-2. Deduzca la regla del trapecio simple integrando la recta que une $(a,f(a))$ y $(b,f(b))$, $y=(x-a)\frac{f(b)-f(a)}{b-a}+f(a)$. Muestre todos los pasos hasta llegar a $\frac12(b-a)[f(a)+f(b)]$.
+3. Deduzca la regla del trapecio simple integrando la recta que une $(a,f(a))$ y $(b,f(b))$, $y=(x-a)\frac{f(b)-f(a)}{b-a}+f(a)$. Muestre todos los pasos hasta llegar a $\frac12(b-a)[f(a)+f(b)]$.
 1. Demuestre que la regla del punto medio, $2h\,f_1$ con $h=(b-a)/2$, es exacta para polinomios de grado 1.
 1. Aplique el trapecio simple a cada subintervalo $[x_{k-1},x_k]$ de una partición no uniforme y obtenga $\sum_k \frac{f(x_{k-1})+f(x_k)}{2}\Delta x_k$. Muestre cómo se simplifica, para $\Delta x$ constante, a $\Delta x\left[\frac{f(x_0)+f(x_N)}{2}+\sum_{k=1}^{N-1}f(x_k)\right]$.
 1. Sea $f(x)=0.2+25x-200x^2+675x^3-900x^4+400x^5$ en $[0,0.8]$. Evalúe $f(0)$, $f(0.4)$ y $f(0.8)$ y calcule el trapecio compuesto con $n=2$. Verifique el valor 1.0688 y calcule el error relativo respecto a la integral exacta $3076/1875\approx1.64053333$.
@@ -159,7 +157,7 @@ POR FORMULAR
 
 ## Integración numérica con los métodos de Simpson 1/3, Simpson 3/8 y Boole
 
-17. Demuestre que la regla de Simpson 1/3 es $\int_a^b f\,dx\approx\frac h3[f(a)+4f(a+h)+f(b)]$ con $h=(b-a)/2$, integrando la parábola que interpola $(a,f(a))$, $(a+h,f(a+h))$, $(b,f(b))$. Relacione el resultado con la forma $\frac{b-a}{6}\left[f(a)+4f\!\left(\frac{a+b}{2}\right)+f(b)\right]$.
+18. Demuestre que la regla de Simpson 1/3 es $\int_a^b f\,dx\approx\frac h3[f(a)+4f(a+h)+f(b)]$ con $h=(b-a)/2$, integrando la parábola que interpola $(a,f(a))$, $(a+h,f(a+h))$, $(b,f(b))$. Relacione el resultado con la forma $\frac{b-a}{6}\left[f(a)+4f\!\left(\frac{a+b}{2}\right)+f(b)\right]$.
 1. Demuestre que Simpson 1/3 es exacta para cubos tomando $f(x)=x^3$ en $[-h,h]$ (nodos $-h,0,h$) y explique, con un argumento de simetría, por qué el coeficiente del término de tercer orden se anula en la integración del polinomio interpolante.
 1. Sabiendo que el error de Simpson 1/3 es $-\frac{1}{90}h^5f^{(4)}(\xi)$, demuestre que equivale a $-\frac{(b-a)^5}{2880}f^{(4)}(\xi)$ cuando $h=(b-a)/2$.
 1. Calcule Simpson 1/3 simple para $\int_0^\pi\sin x\,dx$ con $h=\pi/2$ y calcule el error relativo.
@@ -179,7 +177,7 @@ POR FORMULAR
 
 ## Integración numérica con el método de Newton-Cotes
 
-33. Distinga entre fórmulas de Newton-Cotes cerradas y abiertas. Indique, para cada una, la expresión de los nodos $x_i$ y del paso $h$ en función de $a$, $b$ y $n$. Deduzca la fórmula de integración que usa $n$ puntos de integración abierta/cerrada.
+34. Distinga entre fórmulas de Newton-Cotes cerradas y abiertas. Indique, para cada una, la expresión de los nodos $x_i$ y del paso $h$ en función de $a$, $b$ y $n$. Deduzca la fórmula de integración que usa $n$ puntos de integración abierta/cerrada.
 1. Sea $L(x)=\sum_i \ell_i(x) f(x_i)$ el polinomio interpolante de Lagrange de los datos $(x_i,f(x_i))$. Demuestre que, al aproximar $\int_a^b f\,dx \approx \int_a^b L\,dx$, se obtiene $\sum w_i f(x_i)$ con $w_i=\int_a^b \ell_i(x)\,dx$, y concluya que los pesos dependen solo de los nodos y no de la función $f$.
 1. ¿Por qué las fórmulas abiertas son útiles para integrales con una singularidad en un extremo? ¿Qué problema aparece al componerlas en varios paneles (hueco de $2h$ entre muestras de paneles adyacentes)?
 1. Describa el fenómeno de Runge en el contexto de Newton-Cotes de grado alto.
@@ -192,7 +190,7 @@ POR FORMULAR
 
 ## Extrapolaciones de Richardson y el método de integración de Romberg
 
-42. A partir de las ecuaciones $Q=Q(h_1)+A h_1^{p_0}+O(h_1^{p_1})$ y $Q=Q(h_2)+A h_2^{p_0}+O(h_2^{p_1})$, deduzca que en la extrapolación de Richardson $Q=\frac{h_2^{p_0}Q(h_1)-h_1^{p_0}Q(h_2)}{h_2^{p_0}-h_1^{p_0}}+\text{término de error}$.
+43. A partir de las ecuaciones $Q=Q(h_1)+A h_1^{p_0}+O(h_1^{p_1})$ y $Q=Q(h_2)+A h_2^{p_0}+O(h_2^{p_1})$, deduzca que en la extrapolación de Richardson $Q=\frac{h_2^{p_0}Q(h_1)-h_1^{p_0}Q(h_2)}{h_2^{p_0}-h_1^{p_0}}+\text{término de error}$.
 1. A partir de las ecuaciones $Q=Q(h_1)+A h_1^{p_0}+O(h_1^{p_1})$ y $Q=Q(h_2)+A h_2^{p_0}+O(h_2^{p_1})$, demuestre que el término de error de la extrapolación de Richardson es $O\!\left[\frac{h_2^{p_0}h_1^{p_1}-h_1^{p_0}h_2^{p_1}}{h_2^{p_0}-h_1^{p_0}}\right]$.
 1. Con $h_1=h$, $h_2=h/2$, $p_0=2$, $p_1=4$, demuestre que $Q_4=\frac{4Q_2(h/2)-Q_2(h)}{3}$ y que el coeficiente del error dominante es $-h^4/4$.
 1. Con $h_1=h/2$, $h_2=h/4$, $p_0=4$, $p_1=6$, demuestre que $Q_6=\frac{16Q_4(h/4)-Q_4(h/2)}{15}$ y que el coeficiente del error dominante es $-h^6/1280$.
@@ -202,15 +200,3 @@ POR FORMULAR
 1. Justifique desde la matemática porqué con $n=8$ (9 evaluaciones), el método de Romberg es exacto para un polinomio de grado 5: los términos de Euler-Maclaurin eliminados incluyen las derivadas $f'$, $f'''$, $f^{(5)}$ y el siguiente involucra $f^{(7)}=0$.
 1. En la gráfica del número de intervalos cde los errores absolutos de los diferentes métodos de integración, para $n$ intervalos (escala log), ¿qué pendientes asintóticas se observan para punto medio y trapecio, Simpson 1/3 y 3/8, Boole y Newton-Cotes de 6 puntos? Relacione con el orden global $O(h^2)$, $O(h^4)$, $O(h^6)$ y $O(h^8)$.
 1. En esa misma gráfica los errores se estancan alrededor de $10^{-16}$. Explique el papel del error de redondeo, el épsilon de máquina y por qué para $n$ grande no se puede alcanzar el resultado exacto analítico.
-
-<!---
-## Integración con Gauss-Legendre
-1. Explique la idea de la cuadratura gaussiana: ¿qué se elige de forma óptima (nodos y pesos) y qué ventaja ofrece frente a Newton-Cotes con puntos equiespaciados? ¿Para qué tipo de integrandos es adecuada?
-1. ¿Por qué una cuadratura de $n$ puntos puede integrar exactamente polinomios hasta grado $2n-1$ ($n$ nodos + $n$ pesos = $2n$ parámetros, frente a los $2n$ coeficientes de un polinomio de grado $2n-1$)?
-1. Para $n=2$ en $[-1,1]$, plantee el sistema $c_1+c_2=2$, $c_1x_1+c_2x_2=0$, $c_1x_1^2+c_2x_2^2=2/3$, $c_1x_1^3+c_2x_2^3=0$ y demuestre que la solución única (salvo permutación) es $c_1=c_2=1$, $x_1=-\sqrt3/3$, $x_2=\sqrt3/3$.
-1. Use la recursión de Bonnet, $P_0=1$, $P_1=\xi$, $P_n=\frac{(2n-1)\xi P_{n-1}-(n-1)P_{n-2}}{n}$, para obtener $P_2$ y $P_3$. Calcule sus raíces y compruebe que coinciden con los nodos de $n=2$ y $n=3$.
-1. Con la fórmula de los pesos $w_i=\frac{2}{(1-\xi_i^2)\,[P_n'(\xi_i)]^2}$, verifique que para $n=2$ se obtiene $w_1=w_2=1$.
-1. Deduzca el cambio de variable $x=\frac{(b-a)\xi+(a+b)}{2}$ y demuestre que $\int_a^b f(x)\,dx=\frac{b-a}{2}\int_{-1}^{1}f\!\left(\frac{(b-a)\xi+a+b}{2}\right)d\xi\approx\frac{b-a}{2}\sum w_if\!\left(\frac{(b-a)\xi_i+a+b}{2}\right)$.
-1. Aplique la cuadratura de Gauss-Legendre con $n=3$ a $\int_0^\pi\sin x\,dx$. Calcule el error relativo.
-1. En la gráfica del error de Gauss-Legendre para el polinomio de grado 5 en $[0,0.8]$, el error es cero a partir de $n=3$. Explique por qué $n=2$ no basta y $n=3$ sí, usando el grado de exactitud $2n-1$.
---->
