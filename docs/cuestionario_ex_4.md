@@ -16,6 +16,27 @@ Libros recomendados:
 1. Con la fórmula de los pesos $w_i=\frac{2}{(1-\xi_i^2)\,[P_n'(\xi_i)]^2}$, verifique que para $n=2$ se obtiene $w_1=w_2=1$.
 1. Deduzca el cambio de variable $x=\frac{(b-a)\xi+(a+b)}{2}$ y demuestre que $\int_a^b f(x)\,dx=\frac{b-a}{2}\int_{-1}^{1}f\!\left(\frac{(b-a)\xi+a+b}{2}\right)d\xi\approx\frac{b-a}{2}\sum w_if\!\left(\frac{(b-a)\xi_i+a+b}{2}\right)$.
 1. Aplique la cuadratura de Gauss-Legendre con $n=3$ a $\int_0^\pi\sin x\,dx$. Calcule el error relativo.
+1. Compare las formas en Python para obtener nodos y pesos: `sympy.integrals.quadrature.gauss_legendre`, `numpy.polynomial.legendre.leggauss` y `scipy.special.roots_legendre`.
+1. Explique el uso de la función de Python `scipy.integrate.fixed_quad`.
+
+
+## Integrales impropias
+1. Para integrar numéricamente integrales impropias se deben realizar cambios de variables para transformar la integral a una propia. Explique al menos tres cambios de variable que permitan hacer esta conversión. Indique las condiciones para los cuales dichos cambios de variables son válidos.
+
+## Quadpack
+Indique como se usan las siguientes funciones de Python. Ilustre su uso con ejemplos pequeños:
+1. `scipy.integrate.quad`
+1. `scipy.integrate.dblquad`
+1. `scipy.integrate.tplquad`
+1. `scipy.integrate.nquad`
+
+## Preguntas varias
+Para cada integrando proponga el método más adecuado y justifique: 
+1. Una función periódica sobre un periodo completo.
+1. Una gaussiana estrecha.
+1. Una integral con singularidad en un extremo.
+1. Datos tabulados con espaciado desigual.
+1. Un polinomio de grado 9.
 
 <!---
 ### 1. Programming questions

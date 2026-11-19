@@ -57,7 +57,7 @@ Fuente: <https://xkcd.com/135/>
     - Burden, R. L., Faires, J. D., & Burden, A. M. (2016). *[Numerical analysis](http://ir.harambeeuniversity.edu.et/handle/123456789/1576)* (10th ed.). Cengage Learning.
 * Cuadernos de Jupyter y programas de Python de las carpetas:
     - [Interpolación](../codigo/03_interpolacion/)
-    - [Integración](../codigo/06_integracion/)    
+    - [Integración](../codigo/06_integracion/)
 * Páginas de WIKIPEDIA
     - [Interpolation](https://en.wikipedia.org/wiki/Interpolation)
     - [Nearest-neighbor interpolation](https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
@@ -89,7 +89,17 @@ Fuente: <https://xkcd.com/135/>
 
 
 ## Examen 4
-POR DEFINIR
+* [Cuestionario](cuestionario_ex_4.md)
+* Libros recomendados:
+    - Chapra, S. C. & Canale, R. P. (2021). Numerical Methods for Engineers (8th ed.). McGraw-Hill.
+    - Burden, R. L., Faires, J. D., & Burden, A. M. (2011). *[Numerical analysis](https://faculty.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)* (9th ed.). Cengage Learning.
+    - Burden, R. L., Faires, J. D., & Burden, A. M. (2016). *[Numerical analysis](http://ir.harambeeuniversity.edu.et/handle/123456789/1576)* (10th ed.). Cengage Learning.
+* Cuadernos de Jupyter y programas de Python de las carpetas:
+    - [Integración](../codigo/06_integracion/)
+* Páginas de WIKIPEDIA
+    - [Gaussian quadrature](https://en.wikipedia.org/wiki/Gaussian_quadrature)
+    - [Gauss-Legendre quadrature](https://en.wikipedia.org/wiki/Gauss%E2%80%93Legendre_quadrature)
+    - [Improper integral](https://en.wikipedia.org/wiki/Improper_integral)
 
 <!---
 * Capítulos 13 y 14 Optimización (páginas 350--394) del libro [Chapra & Canale (2020). Numerical Methods for Engineers (8ed). McGraw-Hill](https://mrce.in/ebooks/Numerical%20Methods%20for%20Engineers%208th%20Ed.pdf). 
