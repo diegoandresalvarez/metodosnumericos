@@ -66,14 +66,13 @@ La nota de la exposición se calcula sobre 100 puntos.
 ### Grupo 1: Presupuesto de obra — Costos y variabilidad
 - **Tema:** Presupuesto de obra: costos directos, indirectos y variabilidad.
 - **Caso de estudio:** Pavimentación de 1 km de una vía rural (ancho de calzada de 6.0 m, subbase granular, base estabilizada, carpeta asfáltica y obras básicas de drenaje/cunetas).
-- **Pregunta central:** ¿cuál es la probabilidad de superar el presupuesto determinista de la pavimentación de 1 km de vía rural, y cuánta contingencia hace falta para cubrirse con 80 % de confianza?
 - **Alcance técnico y financiero sugerido (ajustable con justificación):**
   - Elaborar el presupuesto de obra y los Análisis de Precios Unitarios (APU) de las partidas principales, incluyendo **costos directos** (materiales, equipo, mano de obra, transporte) y **costos indirectos** (Administración, Imprevistos y Utilidad - AIU, etc).
   - Establecer una **estimación determinista** del costo total y compararla con el modelo **probabilista** mediante simulación de Monte Carlo en Python y Excel + VBA.
 - **Preguntas clave a resolver:**
+  - ¿Cuál es la probabilidad real de superar el presupuesto determinista? ¿Qué monto de presupuesto debería aprobarse si la entidad contratante exige un nivel de confianza del 80 % (P80)?
   - Construir los APU detallados (materiales, equipo, transporte y mano de obra) y obtener el costo total determinista del proyecto (incluyendo AIU).
   - Modelar la incertidumbre en los insumos críticos de los APU (precios de materiales, acarreos y rendimientos de mano de obra/equipo) justificando las distribuciones elegidas.
-  - ¿Cuál es la probabilidad real de superar el presupuesto determinista? ¿Qué monto de presupuesto debería aprobarse si la entidad contratante exige un nivel de confianza del 80 % (P80)?
   - ¿Cuánta contingencia (P80 menos determinista) recomiendan, y qué porcentaje del costo directo representa?
   - Presentar la tabla de percentiles P10, P50, P80 y P90, el histograma de costo total, la curva de probabilidad acumulada y la gráfica de convergencia de la media al incrementar el número de simulaciones.
   - Si hay materiales con precios que suben juntos (asfalto y combustible), analizar la **correlación** o justificar por qué se ignora.
@@ -97,7 +96,6 @@ Pavimento flexible de 1000 m de longitud y 6,0 m de calzada (6000 m²), en una v
 ### Grupo 2: Cronograma de obra — Plazos y criticidad
 - **Tema:** Cronograma de obra: duraciones probabilísticas, rutas paralelas y criticidad.
 - **Caso de estudio:** Construcción de una **vivienda de 100 m² en área rural**. El método de la ruta crítica determinista da 180 días para construir una vivienda rural de 100 m². 
-- **Pregunta central:** ¿Cuál es la probabilidad real de terminar en 180 días, cuál es la duración P80 y qué tres actividades son críticas con mayor frecuencia?
 - **Alcance técnico y de programación:**
   - Construir un cronograma de **12 actividades** (por ejemplo: replanteo y preliminares, excavación y cimentación, desagües sanitarios, estructura/mampostería, cubierta, instalaciones eléctricas, instalaciones hidrosanitarias, pañetes/revoques, pisos y enchapes, carpintería/ventanería, pintura, aseo y entrega); calcular la **ruta crítica determinista** y las holguras.
   - Garantizar **al menos tres rutas paralelas** y definir las duraciones base (deterministas) para que el cálculo CPM arroje una duración total de **180 días**.
@@ -107,7 +105,6 @@ Pavimento flexible de 1000 m de longitud y 6,0 m de calzada (6000 m²), en una v
   - Si el CPM determinista da **180 días**, ¿cuál es la **probabilidad real** de terminar en 180 días o menos?
   - ¿Cuál es la fecha/duración correspondiente al percentil **P80**?
   - Calcular el índice de criticidad simulada (% de iteraciones en que cada actividad tiene holgura cero) e identificar el Top 3 de actividades con mayor criticidad, explicando por qué actividades no críticas en el CPM determinista adquieren criticidad en la simulación. ¿Qué medidas de acción gerencial recomiendan sobre estas tres actividades?
-  - ¿Cuál es la probabilidad de terminar en 180 días o menos?
   - ¿Por qué una actividad con holgura pequeña (instalaciones eléctricas) puede ser más relevante que otra que está en la ruta crítica determinista?
   - Comparar la duración determinista con la media y los percentiles de la simulación, y explicar por qué la media simulada es mayor que 180 días aunque se use la misma duración más probable.
 
