@@ -66,7 +66,7 @@ La nota de la exposición se calcula sobre 100 puntos.
 
 ### Grupo 1: Presupuesto de obra — Costos y variabilidad
 <details>
-<summary>Clic para expandir</summary>
+<summary>Tema asignado a Carlos David y Santiago. Clic para expandir</summary>
 
 - **Tema:** Presupuesto de obra: costos directos, indirectos y variabilidad.
 - **Caso de estudio:** Pavimentación de 1 km de una vía rural (ancho de calzada de 6.0 m, subbase granular, base estabilizada, carpeta asfáltica y obras básicas de drenaje/cunetas).
@@ -100,7 +100,7 @@ Pavimento flexible de 1000 m de longitud y 6,0 m de calzada (6000 m²), en una v
 
 ### Grupo 2: Cronograma de obra — Plazos y criticidad
 <details>
-<summary>Clic para expandir</summary>
+<summary>Tema asignado a Valentina y CIA. Clic para expandir</summary>
 
 - **Tema:** Cronograma de obra: duraciones probabilísticas, rutas paralelas y criticidad.
 - **Caso de estudio:** Construcción de una **vivienda de 100 m² en área rural**. El método de la ruta crítica determinista da 180 días para construir una vivienda rural de 100 m². 
@@ -191,7 +191,7 @@ Los valores de alquiler son ilustrativos: confróntenlos con cotizaciones o prec
 
 ### Grupo 4: Decisión integral costo/tiempo: estrategia estándar o acelerada
 <details>
-<summary>Clic para expandir</summary>
+<summary>Tema asignado a Manuela y Juan David. Clic para expandir</summary>
 
 **Pregunta central:** en la construcción de una bodega industrial, ¿conviene pagar USD 65.000 adicionales por acelerar la cubierta y los pisos industriales, o es mejor mantener la operación estándar?
 
