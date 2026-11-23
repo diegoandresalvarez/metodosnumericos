@@ -100,7 +100,7 @@ Pavimento flexible de 1000 m de longitud y 6,0 m de calzada (6000 m²), en una v
 
 ### Grupo 2: Cronograma de obra — Plazos y criticidad
 <details>
-<summary>Tema asignado a Valentina y CIA. Clic para expandir</summary>
+<summary>Tema asignado a Valentina y Johan. Clic para expandir</summary>
 
 - **Tema:** Cronograma de obra: duraciones probabilísticas, rutas paralelas y criticidad.
 - **Caso de estudio:** Construcción de una **vivienda de 100 m² en área rural**. El método de la ruta crítica determinista da 180 días para construir una vivienda rural de 100 m². 
