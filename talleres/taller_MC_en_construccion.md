@@ -41,6 +41,7 @@ Al finalizar su exposición, cada grupo debe entregar:
    - Recomendación concreta para la toma de decisiones en el proyecto.
 4. **Justificación de distribuciones y parámetros:** Sustento técnico y estadístico de por qué se eligió cada distribución de probabilidad (Triangular, PERT, Lognormal, Uniforme, discreta, etc.) y cómo se definieron sus parámetros (mínimo, más probable, máximo, media, desviación estándar o probabilidades) a partir del contexto de obra.
 5. **Verificación de convergencia:** Evidencia cuantitativa y gráfica de la estabilidad de los resultados al aumentar el número de iteraciones (por ejemplo, gráfica de convergencia de la media y/o percentiles clave). La media y el P80 de Python y de Excel deben diferir en menos de 1 %.
+6. **Enlace a la conversación con la IA** que empleó para realizar el trabajo. Allí el profesor verá la interacción que tuvo con la inteligencia artificial y los prompts que hizo.
 
 Los datos de cada caso son **sugeridos**. Si cambian un valor, déjenlo documentado y justificado. Donde se indiquen rangos o supuestos complementarios de obra (rendimientos unitarios, precios base o desviaciones), el grupo deberá documentarlos explícitamente como supuestos de ingeniería coherentes con la práctica constructiva.
 
