@@ -6,13 +6,13 @@
 
 
 
-## Objetivo General y Dinámica del Taller
+## 1. Objetivo General y Dinámica del Taller
 
 Cada pareja expone durante 40 minutos un caso de simulación de Monte Carlo aplicado a la gerencia de la construcción, con demostración en Python y en Excel + VBA. El objetivo es que usted pase de un presupuesto o un cronograma determinístico a un análisis probabilístico, y que use esa información para tomar una decisión práctica en obra.
 
 
 
-## Estructura de la exposición (40 minutos)
+## 2. Estructura de la exposición (40 minutos)
 
 | Bloque | Minutos | Contenido |
 | --- | --- | --- |
@@ -28,7 +28,7 @@ Cada pareja debe llevar el modelo listo para correr en clase; una corrida en viv
 
 Ambos integrantes deben poder explicar cualquier parte del trabajo.
 
-## Entregables Obligatorios por Pareja
+## 3. Entregables Obligatorios por Pareja
 
 Al finalizar su exposición, cada grupo debe entregar:
 
@@ -48,7 +48,7 @@ Los datos de cada caso son **sugeridos**. Si cambian un valor, déjenlo document
 Los archivos (código, hoja de cálculo y diapositivas) se envían **antes de la exposición**.
 
 
-## Criterios de evaluación y entrega
+## 4. Criterios de evaluación y entrega
 
 La nota de la exposición se calcula sobre 100 puntos.
 
@@ -62,9 +62,12 @@ La nota de la exposición se calcula sobre 100 puntos.
 | Interpretación y decisión gerencial | 15 | Lectura correcta de percentiles y probabilidades; recomendación concreta y sus límites |
 | Claridad y manejo del tiempo | 10 | Diapositivas legibles, cumplimiento de los 40 minutos y respuestas a las preguntas |
 
-## Casos y Temas por Grupo
+## 5. Casos y Temas por Grupo
 
 ### Grupo 1: Presupuesto de obra — Costos y variabilidad
+<details>
+<summary>Tema asignado a Carlos David y Santiago. Clic para expandir</summary>
+
 - **Tema:** Presupuesto de obra: costos directos, indirectos y variabilidad.
 - **Caso de estudio:** Pavimentación de 1 km de una vía rural (ancho de calzada de 6.0 m, subbase granular, base estabilizada, carpeta asfáltica y obras básicas de drenaje/cunetas).
 - **Alcance técnico y financiero sugerido (ajustable con justificación):**
@@ -93,8 +96,12 @@ Pavimento flexible de 1000 m de longitud y 6,0 m de calzada (6000 m²), en una v
 | Señalización y demarcación | señal | 10 | Poca variabilidad |
 | Costos indirectos (Administración y gastos generales)	|% CD	| 18,0 % |	Variabilidad en costos de transporte de personal, señalización vial y campamento temporal.
 
+</details>
 
 ### Grupo 2: Cronograma de obra — Plazos y criticidad
+<details>
+<summary>Tema asignado a Valentina y Johan. Clic para expandir</summary>
+
 - **Tema:** Cronograma de obra: duraciones probabilísticas, rutas paralelas y criticidad.
 - **Caso de estudio:** Construcción de una **vivienda de 100 m² en área rural**. El método de la ruta crítica determinista da 180 días para construir una vivienda rural de 100 m². 
 - **Alcance técnico y de programación:**
@@ -131,7 +138,12 @@ La ruta crítica determinista es 1-2-3-4-6-8-9-11-12. Hay **tres ramas paralelas
 
 En una red con caminos paralelos, el proyecto suele terminar tarde porque cualquiera de las ramas que se atrase empuja el final. La simulación revela qué actividades son críticas en la práctica, no solo en el papel.
 
+</details>
+
 ### Grupo 3: Decisión integral costo/tiempo — Movimiento de tierras y flota
+<details>
+<summary>Clic para expandir</summary>
+
 - **Tema:** Decisión integral costo/tiempo: dimensionamiento de flota y penalidades por retraso.
 - **Caso de estudio:** Movimiento de tierras de **100,000 m³** (excavación, cargue, acarreo y conformación/compactación) con una meta de plazo contractual de **20 días hábiles** y una **multa superior a $30,000,000 COP** por día de retraso (o fracción proporcional de día) si se supera la fecha plazo.
 
@@ -175,7 +187,11 @@ Contrato de excavación y transporte de **100.000 m³ en banco** a un botadero u
 
 Los valores de alquiler son ilustrativos: confróntenlos con cotizaciones o precios de referencia reales y documenten la fuente. Las variables de decisión son el **número de volquetas** y el **número de excavadoras**.
 
+</details>
+
 ### Grupo 4: Decisión integral costo/tiempo: estrategia estándar o acelerada
+<details>
+<summary>Tema asignado a Manuela y Juan David. Clic para expandir</summary>
 
 **Pregunta central:** en la construcción de una bodega industrial, ¿conviene pagar USD 65.000 adicionales por acelerar la cubierta y los pisos industriales, o es mejor mantener la operación estándar?
 
@@ -232,24 +248,7 @@ Los grupos deben definir y documentar cómo se calculan los indirectos (se sugie
 - Histograma de la diferencia de costo entre A y B (B menos A).
 - Gráfica de convergencia de la media y del P90.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!---
 Decisión integral costo/tiempo — Bodega industrial y patio de maniobras
 - **Tema:** Decisión integral costo/tiempo: evaluación de estrategias de aceleración.
 - **Caso de estudio:** Construcción de una **bodega industrial y patio de maniobras** con los siguientes parámetros base:
@@ -264,3 +263,6 @@ Decisión integral costo/tiempo — Bodega industrial y patio de maniobras
 - **Preguntas clave a resolver:**
   - Comparando **Estrategia A vs. Estrategia B**, ¿cuál conviene elegir según los percentiles de **costo total** (incluyendo directos, indirectos, sobrecosto de aceleración y multas) y la **probabilidad de cumplir las 24 semanas**?
   - ¿En qué escenarios o niveles de aversión al riesgo preferirían una u otra estrategia?
+--->
+
+</details>
