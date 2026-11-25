@@ -19,20 +19,21 @@ Libros recomendados:
 
 ## Polinomios
 
-1. ¿En qué consiste el método de Horner para evaluar polinomios? ¿Por qué es eficiente?
+4. ¿En qué consiste el método de Horner para evaluar polinomios? ¿Por qué es eficiente?
 
 
 
 ## Polinomios con Python
 
 Estudie cuidadosamente los siguientes códigos de Python:
-1. [Poly1D_numpy](../codigo/03_interpolacion/Poly1D_numpy.ipynb) (vale por 10 preguntas del examen)
+
+5. [Poly1D_numpy](../codigo/03_interpolacion/Poly1D_numpy.ipynb) (vale por 10 preguntas del examen)
 
 
 
 ## Interpolación
 
-1. Como se define matemáticamente la interpolación?
+15. Como se define matemáticamente la interpolación?
 1. ¿Cuáles son las propiedades deseables de un método de interpolación?
 1. ¿Cuáles son los criterios principales para elegir un método de interpolación sobre otro?
 
@@ -40,7 +41,7 @@ Estudie cuidadosamente los siguientes códigos de Python:
 
 ## Interpolación univariada
 
-1. ¿Cuáles son las ventajas y desventajas de la interpolación univariada?
+18. ¿Cuáles son las ventajas y desventajas de la interpolación univariada?
 1. ¿Cuáles son los criterios principales para elegir un método de interpolación univariada sobre otro?
 
 
@@ -49,7 +50,7 @@ Estudie cuidadosamente los siguientes códigos de Python:
 
 Con respecto a los siguientes métodos de interpolación univariada, explique: (a) ventajas, (b) desventajas, (c) criterios de selección, (d) clase de continuidad, (e) implementación en Python (API o uso), y (f) derivación matemática (si se abordó en clase):
 
-1. Interpolación de vecinos más cercanos
+20. Interpolación de vecinos más cercanos
 1. Interpolación lineal
 1. Interpolación polinomial
 1. Interpolación con splines cúbicos
@@ -62,7 +63,7 @@ Con respecto a los siguientes métodos de interpolación univariada, explique: (
 
 ## Interpolación polinomial
 
-1. ¿En qué casos se justifica calcular los coeficientes de un polinomio interpolante de grado $n$?
+28. ¿En qué casos se justifica calcular los coeficientes de un polinomio interpolante de grado $n$?
 1. ¿Qué es el fenómeno de Runge? ¿Por qué es importante en la interpolación polinomial?
 1. ¿Qué son los nodos de Chebyshev? ¿Por qué son importantes en la interpolación polinomial?
 1. Compare el uso de nodos equiespaciados vs nodos de Chebyshev en la interpolación polinomial.
@@ -75,15 +76,21 @@ Con respecto a los siguientes métodos de interpolación univariada, explique: (
 ## Interpolación polinomial con Python
 
 Estudie cuidadosamente los siguientes códigos de Python:
-1. [1D_polynomial_interpolation.ipynb](../codigo/03_interpolacion/1D_polynomial_interpolation.ipynb) (vale por 10 preguntas del examen)
 
+35. [1D_polynomial_interpolation.ipynb](../codigo/03_interpolacion/1D_polynomial_interpolation.ipynb) (vale por 10 preguntas del examen)
 
 
 ## Interpolación con splines cúbicos
 
-1. Deduzca rigurosamente su formulación matemática. (vale por 6 preguntas del examen)
-1. Describa y explique matemáticamente las condiciones de frontera: natural (`natural`), empotrada (`clamped`), sin nudo (`not-a-knot`) y periodica (`periodic`). (vale por 6 preguntas del examen)
-1. Como se emplean los splines cúbicos para interpolar curvas cerradas? (vale por 3 preguntas del examen)
+45. Deduzca rigurosamente su formulación matemática. (vale por 6 preguntas del examen)
+
+---
+
+51. Describa y explique matemáticamente las condiciones de frontera: natural (`natural`), empotrada (`clamped`), sin nudo (`not-a-knot`) y periodica (`periodic`). (vale por 6 preguntas del examen)
+
+---
+
+57. Como se emplean los splines cúbicos para interpolar curvas cerradas? (vale por 3 preguntas del examen)
 
 
 
@@ -91,8 +98,11 @@ Estudie cuidadosamente los siguientes códigos de Python:
 
 Estudie cuidadosamente los siguientes códigos de Python:
 
-1. [cubic_spline_interpolation.ipynb](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb) (vale por 10 preguntas del examen)
+60. [cubic_spline_interpolation.ipynb](../codigo/03_interpolacion/cubic_spline_interpolation.ipynb) (vale por 10 preguntas del examen)
 
+---
+
+70. La última pregunta es la 70.
 
 <!---
 ## Interpolación multivariada
@@ -126,12 +136,10 @@ POR FORMULAR
 --->
 ## Integración numérica
 1. Explique la relación entre integración y diferenciación. ¿Cómo se puede interpretar la integral como la solución de un problema de valor inicial?
-<!---
 1. Explique el teorema del valor medio para integrales.
---->
 
 ## Integración numérica con la regla del punto medio y el método de los trapecios
-1. Deduzca la regla del trapecio simple integrando la recta que une $(a,f(a))$ y $(b,f(b))$, $y=(x-a)\frac{f(b)-f(a)}{b-a}+f(a)$. Muestre todos los pasos hasta llegar a $\frac12(b-a)[f(a)+f(b)]$.
+3. Deduzca la regla del trapecio simple integrando la recta que une $(a,f(a))$ y $(b,f(b))$, $y=(x-a)\frac{f(b)-f(a)}{b-a}+f(a)$. Muestre todos los pasos hasta llegar a $\frac12(b-a)[f(a)+f(b)]$.
 1. Demuestre que la regla del punto medio, $2h\,f_1$ con $h=(b-a)/2$, es exacta para polinomios de grado 1.
 1. Aplique el trapecio simple a cada subintervalo $[x_{k-1},x_k]$ de una partición no uniforme y obtenga $\sum_k \frac{f(x_{k-1})+f(x_k)}{2}\Delta x_k$. Muestre cómo se simplifica, para $\Delta x$ constante, a $\Delta x\left[\frac{f(x_0)+f(x_N)}{2}+\sum_{k=1}^{N-1}f(x_k)\right]$.
 1. Sea $f(x)=0.2+25x-200x^2+675x^3-900x^4+400x^5$ en $[0,0.8]$. Evalúe $f(0)$, $f(0.4)$ y $f(0.8)$ y calcule el trapecio compuesto con $n=2$. Verifique el valor 1.0688 y calcule el error relativo respecto a la integral exacta $3076/1875\approx1.64053333$.
@@ -148,7 +156,8 @@ POR FORMULAR
 1. Aplique el punto medio con 4 subintervalos a $\int_0^2 x^3\,dx$ (figura de Riemann medio). Compare con el valor exacto 4 y verifique que el error observado cumple la cota $M_2(b-a)^3/(24n^2)$.
 
 ## Integración numérica con los métodos de Simpson 1/3, Simpson 3/8 y Boole
-1. Demuestre que la regla de Simpson 1/3 es $\int_a^b f\,dx\approx\frac h3[f(a)+4f(a+h)+f(b)]$ con $h=(b-a)/2$, integrando la parábola que interpola $(a,f(a))$, $(a+h,f(a+h))$, $(b,f(b))$. Relacione el resultado con la forma $\frac{b-a}{6}\left[f(a)+4f\!\left(\frac{a+b}{2}\right)+f(b)\right]$.
+
+18. Demuestre que la regla de Simpson 1/3 es $\int_a^b f\,dx\approx\frac h3[f(a)+4f(a+h)+f(b)]$ con $h=(b-a)/2$, integrando la parábola que interpola $(a,f(a))$, $(a+h,f(a+h))$, $(b,f(b))$. Relacione el resultado con la forma $\frac{b-a}{6}\left[f(a)+4f\!\left(\frac{a+b}{2}\right)+f(b)\right]$.
 1. Demuestre que Simpson 1/3 es exacta para cubos tomando $f(x)=x^3$ en $[-h,h]$ (nodos $-h,0,h$) y explique, con un argumento de simetría, por qué el coeficiente del término de tercer orden se anula en la integración del polinomio interpolante.
 1. Sabiendo que el error de Simpson 1/3 es $-\frac{1}{90}h^5f^{(4)}(\xi)$, demuestre que equivale a $-\frac{(b-a)^5}{2880}f^{(4)}(\xi)$ cuando $h=(b-a)/2$.
 1. Calcule Simpson 1/3 simple para $\int_0^\pi\sin x\,dx$ con $h=\pi/2$ y calcule el error relativo.
@@ -167,7 +176,8 @@ POR FORMULAR
 
 
 ## Integración numérica con el método de Newton-Cotes
-1. Distinga entre fórmulas de Newton-Cotes cerradas y abiertas. Indique, para cada una, la expresión de los nodos $x_i$ y del paso $h$ en función de $a$, $b$ y $n$. Deduzca la fórmula de integración que usa $n$ puntos de integración abierta/cerrada.
+
+34. Distinga entre fórmulas de Newton-Cotes cerradas y abiertas. Indique, para cada una, la expresión de los nodos $x_i$ y del paso $h$ en función de $a$, $b$ y $n$. Deduzca la fórmula de integración que usa $n$ puntos de integración abierta/cerrada.
 1. Sea $L(x)=\sum_i \ell_i(x) f(x_i)$ el polinomio interpolante de Lagrange de los datos $(x_i,f(x_i))$. Demuestre que, al aproximar $\int_a^b f\,dx \approx \int_a^b L\,dx$, se obtiene $\sum w_i f(x_i)$ con $w_i=\int_a^b \ell_i(x)\,dx$, y concluya que los pesos dependen solo de los nodos y no de la función $f$.
 1. ¿Por qué las fórmulas abiertas son útiles para integrales con una singularidad en un extremo? ¿Qué problema aparece al componerlas en varios paneles (hueco de $2h$ entre muestras de paneles adyacentes)?
 1. Explique el fenómeno de Runge y por qué puede producir errores muy grandes cuando se utilizan fórmulas de Newton-Cotes de grado elevado.
@@ -179,7 +189,8 @@ POR FORMULAR
 
 
 ## Extrapolaciones de Richardson y el método de integración de Romberg
-1. A partir de las ecuaciones $Q=Q(h_1)+A h_1^{p_0}+O(h_1^{p_1})$ y $Q=Q(h_2)+A h_2^{p_0}+O(h_2^{p_1})$, deduzca que en la extrapolación de Richardson $Q=\frac{h_2^{p_0}Q(h_1)-h_1^{p_0}Q(h_2)}{h_2^{p_0}-h_1^{p_0}}+\text{término de error}$.
+
+43. A partir de las ecuaciones $Q=Q(h_1)+A h_1^{p_0}+O(h_1^{p_1})$ y $Q=Q(h_2)+A h_2^{p_0}+O(h_2^{p_1})$, deduzca que en la extrapolación de Richardson $Q=\frac{h_2^{p_0}Q(h_1)-h_1^{p_0}Q(h_2)}{h_2^{p_0}-h_1^{p_0}}+\text{término de error}$.
 1. A partir de las ecuaciones $Q=Q(h_1)+A h_1^{p_0}+O(h_1^{p_1})$ y $Q=Q(h_2)+A h_2^{p_0}+O(h_2^{p_1})$, demuestre que el término de error de la extrapolación de Richardson es $O\!\left[\frac{h_2^{p_0}h_1^{p_1}-h_1^{p_0}h_2^{p_1}}{h_2^{p_0}-h_1^{p_0}}\right]$.
 1. Con $h_1=h$, $h_2=h/2$, $p_0=2$, $p_1=4$, demuestre que $Q_4=\frac{4Q_2(h/2)-Q_2(h)}{3}$ y que el coeficiente del error dominante es $-h^4/4$.
 1. Con $h_1=h/2$, $h_2=h/4$, $p_0=4$, $p_1=6$, demuestre que $Q_6=\frac{16Q_4(h/4)-Q_4(h/2)}{15}$ y que el coeficiente del error dominante es $-h^6/1280$.
