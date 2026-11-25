@@ -170,7 +170,7 @@ POR FORMULAR
 1. Distinga entre fórmulas de Newton-Cotes cerradas y abiertas. Indique, para cada una, la expresión de los nodos $x_i$ y del paso $h$ en función de $a$, $b$ y $n$. Deduzca la fórmula de integración que usa $n$ puntos de integración abierta/cerrada.
 1. Sea $L(x)=\sum_i \ell_i(x) f(x_i)$ el polinomio interpolante de Lagrange de los datos $(x_i,f(x_i))$. Demuestre que, al aproximar $\int_a^b f\,dx \approx \int_a^b L\,dx$, se obtiene $\sum w_i f(x_i)$ con $w_i=\int_a^b \ell_i(x)\,dx$, y concluya que los pesos dependen solo de los nodos y no de la función $f$.
 1. ¿Por qué las fórmulas abiertas son útiles para integrales con una singularidad en un extremo? ¿Qué problema aparece al componerlas en varios paneles (hueco de $2h$ entre muestras de paneles adyacentes)?
-1. Describa el fenómeno de Runge en el contexto de Newton-Cotes de grado alto.
+1. Explique el fenómeno de Runge y por qué puede producir errores muy grandes cuando se utilizan fórmulas de Newton-Cotes de grado elevado.
 1. Usando el término de error de la interpolación polinómica de grado $n$, demuestre que una fórmula de Newton-Cotes con $n+1$ puntos integra exactamente cualquier polinomio de grado menor o igual que $n$.
 1. Explique por qué las fórmulas con número par de segmentos ($n$ par), como Simpson 1/3 y Boole, integran exactamente polinomios de un grado más que el número de segmentos, a diferencia de las de $n$ impar. ¿Qué se concluye sobre cuáles son las de preferencia?
 1. Complete la tabla de grado de exactitud: trapecio, Simpson 1/3, Simpson 3/8 y Boole. Verifique que Simpson 1/3 integra exactamente $x^3$ en $[0,2]$.
@@ -200,4 +200,20 @@ POR FORMULAR
 1. Deduzca el cambio de variable $x=\frac{(b-a)\xi+(a+b)}{2}$ y demuestre que $\int_a^b f(x)\,dx=\frac{b-a}{2}\int_{-1}^{1}f\!\left(\frac{(b-a)\xi+a+b}{2}\right)d\xi\approx\frac{b-a}{2}\sum w_if\!\left(\frac{(b-a)\xi_i+a+b}{2}\right)$.
 1. Aplique la cuadratura de Gauss-Legendre con $n=3$ a $\int_0^\pi\sin x\,dx$. Calcule el error relativo.
 1. En la gráfica del error de Gauss-Legendre para el polinomio de grado 5 en $[0,0.8]$, el error es cero a partir de $n=3$. Explique por qué $n=2$ no basta y $n=3$ sí, usando el grado de exactitud $2n-1$.
+--->
+
+
+<!---
+## Sección F: Impropias, QUADPACK y síntesis (P91–P100)
+
+FALTAN POR ORGANIZAR
+
+1. Demuestre la identidad $\int_a^b f(x)\,dx=\int_{1/b}^{1/a}\frac1{t^2}f\!\left(\frac1t\right)dt$ para $ab>0$ con el cambio de variable $t=1/x$. Indique para qué casos de límites infinitos sirve.
+1. ¿Por qué la transformación anterior funciona para funciones que decrecen hacia infinito más rápido que $1/x^2$? ¿Qué ocurre con el integrando transformado $f(1/t)/t^2$ cuando $t\to0$?
+1. Si el límite superior es infinito y el integrando decae exponencialmente, deduzca el cambio $t=e^{-x}$ ($x=-\log t$) y demuestre que $\int_{x=a}^{\infty}f(x)\,dx=\int_{t=0}^{e^{-a}}f(-\log t)\frac{dt}{t}$.
+1. En el código de la diapositiva 100, la CDF normal estándar en 1 se calcula como $\int_{-\infty}^{-2}+\int_{-2}^{1}$. Explique qué hacen `new_a = 1/b` y `new_b = 1/a` (con `a = -inf`), cómo el integrando transformado se comporta cerca de $t=0$, y calcule el error absoluto entre 0.8413447460364858 y el valor exacto 0.8413447460685429.
+1. ¿Qué es QUADPACK? Mencione su origen, lenguaje original, rutinas citadas (DQAGS, DQAGI), implementaciones en otras librerías (Octave, GSL, SciPy) y la ventaja de su enfoque adaptativo global.
+1. Indique para qué sirven `scipy.integrate.quad`, `dblquad`, `tplquad` y `nquad`, y cuándo usar cada una.
+1. Un experimento da 6 mediciones equiespaciadas (5 segmentos). Describa cómo integrar usando Simpson 1/3 y 3/8 combinados y qué orden de exactitud global se obtiene. ¿Qué ocurre si se usa solo el trapecio?
+1. Para cada integrando proponga el método más adecuado y justifique: (a) una función periódica sobre un periodo completo, (b) una gaussiana estrecha, (c) una integral con singularidad en un extremo, (d) datos tabulados con espaciado desigual, (e) un polinomio de grado 9.
 --->
