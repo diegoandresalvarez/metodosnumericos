@@ -33,7 +33,7 @@ Estudie cuidadosamente los siguientes códigos de Python:
 
 ## Interpolación
 
-15. Como se define matemáticamente la interpolación?
+15.¿Cómo se define matemáticamente la interpolación?
 1. ¿Cuáles son las propiedades deseables de un método de interpolación?
 1. ¿Cuáles son los criterios principales para elegir un método de interpolación sobre otro?
 
